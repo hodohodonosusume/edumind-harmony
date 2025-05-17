@@ -1,55 +1,85 @@
-// Initialize AOS animation
-document.addEventListener('DOMContentLoaded', function() {
-    AOS.init({
-        duration: 800,
-        easing: 'ease-in-out',
-        once: true
-    });
+// Initialize AOS
+AOS.init({ [cite: 280]
+    duration: 800, [cite: 280]
+    once: true [cite: 280]
+}); [cite: 280]
+// Mobile menu toggle
+const mobileMenuButton = document.getElementById('mobile-menu-button'); [cite: 281]
+const mobileMenu = document.getElementById('mobile-menu'); [cite: 281]
+mobileMenuButton.addEventListener('click', () => { [cite: 282]
+    mobileMenu.classList.toggle('hidden'); [cite: 282]
+}); [cite: 282]
+// Navbar scroll effect
+const navbar = document.getElementById('navbar'); [cite: 283]
+const navLinks = navbar.querySelectorAll('a'); [cite: 283]
+window.addEventListener('scroll', () => { [cite: 284]
+    if (window.scrollY > 50) { [cite: 284]
+        navbar.classList.add('navbar-scrolled'); [cite: 284]
+        navLinks.forEach(link => { [cite: 284]
+            link.classList.remove('text-white'); [cite: 284]
+            link.classList.add('text-gray-800'); [cite: 284]
+        }); [cite: 285]
+    } else { [cite: 285]
+        navbar.classList.remove('navbar-scrolled'); [cite: 285]
+        navLinks.forEach(link => { [cite: 285]
+            link.classList.add('text-white'); [cite: 285]
+            link.classList.remove('text-gray-800'); [cite: 285]
+        }); [cite: 286]
+    } [cite: 286]
+}); [cite: 286]
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => { [cite: 287]
+    anchor.addEventListener('click', function (e) { [cite: 287]
+        e.preventDefault(); [cite: 287]
+        
+        const targetId = this.getAttribute('href'); [cite: 287]
+        if (targetId === '#') return; [cite: 288]
+        
+        const targetElement = document.querySelector(targetId); [cite: 288]
+        if (targetElement) { [cite: 288]
+            mobileMenu.classList.add('hidden'); [cite: 288]
+            window.scrollTo({ [cite: 288]
+                top: targetElement.offsetTop - 80, [cite: 289]
+                behavior: 'smooth' [cite: 289]
+            }); [cite: 289]
+        } [cite: 289]
+    }); [cite: 289]
+}); [cite: 290]
 
-    // Mobile menu toggle
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    if (mobileMenuButton && mobileMenu) {
-        mobileMenuButton.addEventListener('click', function() {
-            mobileMenu.classList.toggle('hidden');
-        });
-    }
-
-    // FAQ toggle
-    const faqQuestions = document.querySelectorAll('.faq-question');
-    faqQuestions.forEach(question => {
-        question.addEventListener('click', () => {
-            const answer = question.nextElementSibling;
-            question.classList.toggle('active');
-
-            if (question.classList.contains('active')) {
-                answer.style.maxHeight = answer.scrollHeight + 'px';
-                answer.classList.add('show');
-            } else {
-                answer.style.maxHeight = '0';
-                answer.classList.remove('show');
-            }
-        });
-    });
-
-    // Back to top button
-    const backToTopButton = document.getElementById('back-to-top');
-
-    if (backToTopButton) {
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                backToTopButton.classList.remove('hidden');
-            } else {
-                backToTopButton.classList.add('hidden');
-            }
-        });
-
-        backToTopButton.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-    }
-});
+// FAQ accordion
+const accordionHeaders = document.querySelectorAll('.accordion-header'); [cite: 290]
+accordionHeaders.forEach(header => { [cite: 291]
+    header.addEventListener('click', () => { [cite: 291]
+        const content = header.nextElementSibling; [cite: 291]
+        const icon = header.querySelector('i'); [cite: 291]
+        
+        content.classList.toggle('active'); [cite: 291]
+        icon.classList.toggle('transform'); [cite: 292]
+        icon.classList.toggle('rotate-180'); [cite: 292]
+        
+        if (content.classList.contains('active')) { [cite: 292]
+            content.style.maxHeight = content.scrollHeight + 'px'; [cite: 292]
+        } else { [cite: 292]
+            content.style.maxHeight = 0; [cite: 293]
+        } [cite: 293]
+    }); [cite: 293]
+}); [cite: 293]
+// Form validation
+const contactForm = document.querySelector('#contact form'); [cite: 294]
+if (contactForm) { [cite: 295]
+    contactForm.addEventListener('submit', (e) => { [cite: 295]
+        e.preventDefault(); [cite: 295]
+        
+        // Simple form validation
+        const name = document.getElementById('name').value; [cite: 295]
+        const email = document.getElementById('email').value; [cite: 296]
+        const subject = document.getElementById('subject').value; [cite: 296]
+        const message = document.getElementById('message').value; [cite: 296]
+        
+        if (name && email && subject && message) { [cite: 296]
+            // Form submission logic would go here
+            alert('お問い合わせありがとうございます！折り返しご連絡いたします。'); [cite: 297]
+            contactForm.reset(); [cite: 297]
+        } [cite: 297]
+    }); [cite: 297]
+} [cite: 298]

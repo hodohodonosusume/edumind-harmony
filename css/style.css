@@ -1,279 +1,151 @@
-body {
-    font-family: 'Noto Sans JP', sans-serif;
-    color: #333;
-    line-height: 1.6;
-    background-color: #f9f9ff;
-}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap'); [cite: 2]
+:root { [cite: 3]
+    --primary: #4F46E5; [cite: 3]
+    --primary-dark: #4338CA; [cite: 3]
+    --secondary: #10B981; [cite: 3]
+    --accent: #F59E0B; [cite: 4]
+    --dark: #1F2937; [cite: 4]
+    --light: #F9FAFB; [cite: 4]
+} [cite: 4]
 
-/* Custom Color Classes */
-.bg-primary {
-    background-color: #4361ee;
-}
+body { [cite: 4]
+    font-family: 'Noto Sans JP', sans-serif; [cite: 4]
+    color: var(--dark); [cite: 5]
+    background-color: var(--light); [cite: 5]
+    line-height: 1.7; [cite: 5]
+    overflow-x: hidden; [cite: 5]
+} [cite: 5]
 
-.bg-secondary {
-    background-color: #7678ed;
-}
+h1, h2, h3, h4, h5, h6 { [cite: 5]
+    font-family: 'Poppins', 'Noto Sans JP', sans-serif; [cite: 5]
+    font-weight: 700; [cite: 6]
+} [cite: 6]
 
-.bg-accent {
-    background-color: #3f37c9;
-}
+.hero-gradient { [cite: 6]
+    background: linear-gradient(135deg, #4F46E5 0%, #8B5CF6 100%); [cite: 6]
+} [cite: 7]
 
-.text-primary {
-    color: #4361ee;
-}
+.card { [cite: 7]
+    transition: transform 0.3s ease, box-shadow 0.3s ease; [cite: 7]
+} [cite: 8]
 
-.text-secondary {
-    color: #7678ed;
-}
+.card:hover { [cite: 8]
+    transform: translateY(-5px); [cite: 8]
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); [cite: 9]
+} [cite: 10]
 
-.text-accent {
-    color: #3f37c9;
-}
+.section { [cite: 10]
+    padding: 6rem 0; [cite: 10]
+} [cite: 11]
 
-.border-primary {
-    border-color: #4361ee;
-}
+.btn-primary { [cite: 11]
+    background-color: var(--primary); [cite: 11]
+    color: white; [cite: 12]
+    padding: 0.75rem 2rem; [cite: 12]
+    border-radius: 0.5rem; [cite: 12]
+    font-weight: 600; [cite: 12]
+    transition: all 0.3s ease; [cite: 12]
+} [cite: 13]
 
-.hover-grow {
-    transition: transform 0.3s ease;
-}
+.btn-primary:hover { [cite: 13]
+    background-color: var(--primary-dark); [cite: 13]
+    transform: translateY(-2px); [cite: 14]
+    box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.3); [cite: 14]
+} [cite: 15]
 
-.hover-grow:hover {
-    transform: scale(1.03);
-}
+.btn-secondary { [cite: 15]
+    background-color: transparent; [cite: 15]
+    color: var(--primary); [cite: 16]
+    border: 2px solid var(--primary); [cite: 16]
+    padding: 0.75rem 2rem; [cite: 16]
+    border-radius: 0.5rem; [cite: 16]
+    font-weight: 600; [cite: 16]
+    transition: all 0.3s ease; [cite: 16]
+} [cite: 17]
 
-.card {
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
-}
+.btn-secondary:hover { [cite: 17]
+    background-color: var(--primary); [cite: 17]
+    color: white; [cite: 18]
+    transform: translateY(-2px); [cite: 18]
+} [cite: 18]
 
-.card:hover {
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-    transform: translateY(-5px);
-}
+.feature-icon { [cite: 18]
+    background-color: rgba(79, 70, 229, 0.1); [cite: 18]
+    color: var(--primary); [cite: 19]
+    width: 64px; [cite: 19]
+    height: 64px; [cite: 19]
+    border-radius: 50%; [cite: 19]
+    display: flex; [cite: 19]
+    align-items: center; [cite: 19]
+    justify-content: center; [cite: 19]
+    margin-bottom: 1.5rem; [cite: 19]
+} [cite: 20]
 
-.gradient-bg {
-    background: linear-gradient(135deg, #4361ee 0%, #7678ed 100%);
-}
+.testimonial { [cite: 20]
+    background-color: white; [cite: 20]
+    padding: 2rem; [cite: 21]
+    border-radius: 1rem; [cite: 21]
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); [cite: 21]
+} [cite: 22]
 
-.btn-primary {
-    background-color: #4361ee;
-    color: white;
-    padding: 0.75rem 1.5rem;
-    border-radius: 0.5rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-}
+#navbar { [cite: 22]
+    transition: all 0.3s ease; [cite: 22]
+} [cite: 23]
 
-.btn-primary:hover {
-    background-color: #3f37c9;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(67, 97, 238, 0.3);
-}
+.navbar-scrolled { [cite: 23]
+    background-color: white !important; [cite: 23]
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); [cite: 24]
+} [cite: 24]
 
-.btn-secondary {
-    background-color: white;
-    color: #4361ee;
-    border: 2px solid #4361ee;
-    padding: 0.75rem 1.5rem;
-    border-radius: 0.5rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-}
+.blog-card { [cite: 24]
+    overflow: hidden; [cite: 24]
+    border-radius: 0.75rem; [cite: 25]
+} [cite: 25]
 
-.btn-secondary:hover {
-    background-color: #f0f4ff;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(67, 97, 238, 0.15);
-}
+.blog-card img { [cite: 25]
+    transition: transform 0.5s ease; [cite: 25]
+} [cite: 26]
 
-/* Price Card Styles */
-.price-card {
-    border: 1px solid #e2e8f0;
-    border-radius: 12px;
-    transition: all 0.3s ease;
-}
+.blog-card:hover img { [cite: 26]
+    transform: scale(1.05); [cite: 26]
+} [cite: 27]
 
-.price-card:hover {
-    border-color: #4361ee;
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(67, 97, 238, 0.15);
-}
+.timeline { [cite: 27]
+    border-left: 3px solid var(--primary); [cite: 27]
+    padding-left: 2rem; [cite: 28]
+    position: relative; [cite: 28]
+} [cite: 28]
 
-.featured-price {
-    border: 2px solid #4361ee;
-    transform: scale(1.03);
-}
+.timeline-dot { [cite: 28]
+    position: absolute; [cite: 28]
+    left: -1.25rem; [cite: 29]
+    background: var(--primary); [cite: 29]
+    width: 2rem; [cite: 29]
+    height: 2rem; [cite: 29]
+    border-radius: 50%; [cite: 29]
+    display: flex; [cite: 29]
+    align-items: center; [cite: 29]
+    justify-content: center; [cite: 29]
+    color: white; [cite: 29]
+    font-weight: bold; [cite: 29]
+} [cite: 30]
 
-/* Custom Animations */
-@keyframes float {
-    0% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-    100% {
-        transform: translateY(0px);
-    }
-}
+.accordion-header { [cite: 30]
+    cursor: pointer; [cite: 30]
+} [cite: 31]
 
-.float-animation {
-    animation: float 6s ease-in-out infinite;
-}
+.accordion-content { [cite: 31]
+    max-height: 0; [cite: 31]
+    overflow: hidden; [cite: 32]
+    transition: max-height 0.3s ease; [cite: 32]
+} [cite: 32]
 
-/* Custom Progress Bar */
-.progress-bar {
-    height: 8px;
-    border-radius: 4px;
-    background-color: #e2e8f0;
-    overflow: hidden;
-}
+.accordion-content.active { [cite: 32]
+    max-height: 500px; [cite: 32]
+} [cite: 33]
 
-.progress-value {
-    height: 100%;
-    border-radius: 4px;
-    background: linear-gradient(90deg, #4361ee 0%, #7678ed 100%);
-}
-
-/* Navbar styles */
-.navbar {
-    background-color: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(5px);
-}
-
-/* Section dividers */
-.section-divider {
-    height: 80px;
-    background: linear-gradient(135deg, #f9f9ff 0%, #f0f4ff 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
-    margin-bottom: -1px;
-}
-
-/* Timeline styles */
-.timeline {
-    position: relative;
-}
-
-.timeline::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 25px;
-    height: 100%;
-    width: 2px;
-    background-color: #4361ee;
-}
-
-.timeline-item {
-    position: relative;
-    margin-left: 50px;
-    padding-bottom: 30px;
-}
-
-.timeline-item::before {
-    content: '';
-    position: absolute;
-    top: 5px;
-    left: -36px;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background-color: white;
-    border: 3px solid #4361ee;
-}
-
-/* Custom Checkbox */
-.custom-checkbox {
-    width: 20px;
-    height: 20px;
-    border: 2px solid #4361ee;
-    border-radius: 4px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 10px;
-    position: relative;
-}
-
-.custom-checkbox::after {
-    content: '\f00c';
-    font-family: 'Font Awesome 6 Free';
-    font-weight: 900;
-    color: #4361ee;
-    font-size: 12px;
-    opacity: 0;
-    transition: opacity 0.2s ease;
-}
-
-.feature-item:hover .custom-checkbox::after {
-    opacity: 1;
-}
-
-/* FAQ Styles */
-.faq-item {
-    border-bottom: 1px solid #e2e8f0;
-}
-
-.faq-question {
-    cursor: pointer;
-    position: relative;
-    padding-right: 30px;
-}
-
-.faq-question::after {
-    content: '\f107';
-    font-family: 'Font Awesome 6 Free';
-    font-weight: 900;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: transform 0.3s ease;
-}
-
-.faq-question.active::after {
-    transform: translateY(-50%) rotate(180deg);
-}
-
-.faq-answer {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-}
-
-.faq-answer.show {
-    max-height: 500px; /* Adjust as needed */
-}
-
-/* Teacher badge */
-.teacher-badge {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: rgba(67, 97, 238, 0.9);
-    color: white;
-    padding: 5px 10px;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 600;
-}
-
-/* CSS for print/PDF optimization */
-@media print {
-    .card, .price-card {
-        break-inside: avoid;
-        page-break-inside: avoid;
-    }
-
-    section {
-        page-break-inside: avoid;
-        break-inside: avoid;
-    }
-
-    .hidden-print {
-        display: none !important;
-    }
-}
+@media (max-width: 768px) { [cite: 33]
+    .section { [cite: 33]
+        padding: 4rem 0; [cite: 33]
+    } [cite: 34]
+} [cite: 34]
