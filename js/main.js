@@ -1,85 +1,90 @@
 // Initialize AOS
-AOS.init({ [cite: 280]
-    duration: 800, [cite: 280]
-    once: true [cite: 280]
-}); [cite: 280]
+AOS.init({
+    duration: 800,
+    once: true
+});
+
 // Mobile menu toggle
-const mobileMenuButton = document.getElementById('mobile-menu-button'); [cite: 281]
-const mobileMenu = document.getElementById('mobile-menu'); [cite: 281]
-mobileMenuButton.addEventListener('click', () => { [cite: 282]
-    mobileMenu.classList.toggle('hidden'); [cite: 282]
-}); [cite: 282]
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+mobileMenuButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+});
+
 // Navbar scroll effect
-const navbar = document.getElementById('navbar'); [cite: 283]
-const navLinks = navbar.querySelectorAll('a'); [cite: 283]
-window.addEventListener('scroll', () => { [cite: 284]
-    if (window.scrollY > 50) { [cite: 284]
-        navbar.classList.add('navbar-scrolled'); [cite: 284]
-        navLinks.forEach(link => { [cite: 284]
-            link.classList.remove('text-white'); [cite: 284]
-            link.classList.add('text-gray-800'); [cite: 284]
-        }); [cite: 285]
-    } else { [cite: 285]
-        navbar.classList.remove('navbar-scrolled'); [cite: 285]
-        navLinks.forEach(link => { [cite: 285]
-            link.classList.add('text-white'); [cite: 285]
-            link.classList.remove('text-gray-800'); [cite: 285]
-        }); [cite: 286]
-    } [cite: 286]
-}); [cite: 286]
+const navbar = document.getElementById('navbar');
+const navLinks = navbar.querySelectorAll('a');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+        navbar.classList.add('navbar-scrolled');
+        navLinks.forEach(link => {
+            link.classList.remove('text-white');
+            link.classList.add('text-gray-800');
+        });
+    } else {
+        navbar.classList.remove('navbar-scrolled');
+        navLinks.forEach(link => {
+            link.classList.add('text-white');
+            link.classList.remove('text-gray-800');
+        });
+    }
+});
+
 // Smooth scroll for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => { [cite: 287]
-    anchor.addEventListener('click', function (e) { [cite: 287]
-        e.preventDefault(); [cite: 287]
-        
-        const targetId = this.getAttribute('href'); [cite: 287]
-        if (targetId === '#') return; [cite: 288]
-        
-        const targetElement = document.querySelector(targetId); [cite: 288]
-        if (targetElement) { [cite: 288]
-            mobileMenu.classList.add('hidden'); [cite: 288]
-            window.scrollTo({ [cite: 288]
-                top: targetElement.offsetTop - 80, [cite: 289]
-                behavior: 'smooth' [cite: 289]
-            }); [cite: 289]
-        } [cite: 289]
-    }); [cite: 289]
-}); [cite: 290]
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+            mobileMenu.classList.add('hidden');
+            window.scrollTo({
+                top: targetElement.offsetTop - 80,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
 
 // FAQ accordion
-const accordionHeaders = document.querySelectorAll('.accordion-header'); [cite: 290]
-accordionHeaders.forEach(header => { [cite: 291]
-    header.addEventListener('click', () => { [cite: 291]
-        const content = header.nextElementSibling; [cite: 291]
-        const icon = header.querySelector('i'); [cite: 291]
-        
-        content.classList.toggle('active'); [cite: 291]
-        icon.classList.toggle('transform'); [cite: 292]
-        icon.classList.toggle('rotate-180'); [cite: 292]
-        
-        if (content.classList.contains('active')) { [cite: 292]
-            content.style.maxHeight = content.scrollHeight + 'px'; [cite: 292]
-        } else { [cite: 292]
-            content.style.maxHeight = 0; [cite: 293]
-        } [cite: 293]
-    }); [cite: 293]
-}); [cite: 293]
+const accordionHeaders = document.querySelectorAll('.accordion-header');
+accordionHeaders.forEach(header => {
+    header.addEventListener('click', () => {
+        const content = header.nextElementSibling;
+        const icon = header.querySelector('i');
+
+        content.classList.toggle('active');
+        icon.classList.toggle('transform');
+        icon.classList.toggle('rotate-180');
+
+        if (content.classList.contains('active')) {
+            content.style.maxHeight = content.scrollHeight + 'px';
+        } else {
+            content.style.maxHeight = 0;
+        }
+    });
+});
+
 // Form validation
-const contactForm = document.querySelector('#contact form'); [cite: 294]
-if (contactForm) { [cite: 295]
-    contactForm.addEventListener('submit', (e) => { [cite: 295]
-        e.preventDefault(); [cite: 295]
-        
+const contactForm = document.querySelector('#contact form');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
         // Simple form validation
-        const name = document.getElementById('name').value; [cite: 295]
-        const email = document.getElementById('email').value; [cite: 296]
-        const subject = document.getElementById('subject').value; [cite: 296]
-        const message = document.getElementById('message').value; [cite: 296]
-        
-        if (name && email && subject && message) { [cite: 296]
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const subject = document.getElementById('subject').value;
+        const message = document.getElementById('message').value;
+
+        if (name && email && subject && message) {
             // Form submission logic would go here
-            alert('お問い合わせありがとうございます！折り返しご連絡いたします。'); [cite: 297]
-            contactForm.reset(); [cite: 297]
-        } [cite: 297]
-    }); [cite: 297]
-} [cite: 298]
+            alert('お問い合わせありがとうございます！折り返しご連絡いたします。');
+            contactForm.reset();
+        }
+    });
+}
