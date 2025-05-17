@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プライバシーポリシー | EduMind Harmony</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-50">
+    <nav id="navbar" class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold text-gray-800 flex items-center">
+                    <i class="fas fa-brain mr-2 text-indigo-600"></i>
+                    <span>EduMind Harmony</span>
+                </a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html#about" class="text-gray-800 hover:text-indigo-600 transition">サービス紹介</a>
+                    <a href="index.html#ai-chatbot" class="text-gray-800 hover:text-indigo-600 transition">AIチャットボット</a>
+                    <a href="index.html#tutor" class="text-gray-800 hover:text-indigo-600 transition">オンライン指導</a>
+                    <a href="index.html#profile" class="text-gray-800 hover:text-indigo-600 transition">講師紹介</a>
+                    <a href="index.html#blog" class="text-gray-800 hover:text-indigo-600 transition">ブログ</a>
+                    <a href="index.html#contact" class="text-gray-800 hover:text-indigo-600 transition">お問い合わせ</a>
+                </div>
+                 <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-800 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+         <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg absolute top-full left-0 right-0">
+            <div class="container mx-auto px-4 py-2">
+                <div class="flex flex-col space-y-3">
+                     <a href="index.html#about" class="text-gray-800 hover:text-indigo-600 transition">サービス紹介</a>
+                    <a href="index.html#ai-chatbot" class="text-gray-800 hover:text-indigo-600 transition">AIチャットボット</a>
+                    <a href="index.html#tutor" class="text-gray-800 hover:text-indigo-600 transition">オンライン指導</a>
+                    <a href="index.html#profile" class="text-gray-800 hover:text-indigo-600 transition">講師紹介</a>
+                     <a href="index.html#blog" class="text-gray-800 hover:text-indigo-600 transition">ブログ</a>
+                    <a href="index.html#contact" class="text-gray-800 hover:text-indigo-600 transition">お問い合わせ</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl font-bold mb-8 text-center">EduMindプライバシーポリシー</h1>
+
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <h2 class="text-2xl font-bold mb-4">1. 基本方針</h2>
+                <p class="text-gray-700 mb-6">
+                    EduMind（以下「当社」）は、不登校生徒向けAIチャットボット及びオンライン教育サービス（以下「本サービス」）における個人情報保護の重要性を認識し、個人情報保護法及び関連法令を遵守するとともに、以下の方針に基づき適正な取扱いを実施します。
+                </p>
+
+                <h2 class="text-2xl font-bold mb-4">2. 収集情報の範囲と利用目的</h2>
+                <h3 class="text-xl font-semibold mb-3">(1) 取得情報の種類</h3>
+                <ul class="list-disc list-inside text-gray-700 mb-6">
+                    <li>基本属性情報：氏名・生年月日・学校名・学年</li>
+                    <li>学習データ：チャットログ・学習進捗・理解度分析結果</li>
+                    <li>メンタルケア情報：ストレスレベル推定値・会話内容の感情分析データ</li>
+                    <li>保護者情報：連絡先・レポート閲覧履歴</li>
+                    <li>技術情報：IPアドレス・Cookie・デバイス情報</li>
+                </ul>
+                <h3 class="text-xl font-semibold mb-3">(2) 利用目的</h3>
+                <ul class="list-disc list-inside text-gray-700 mb-6">
+                    <li>AI学習支援アルゴリズムの最適化</li>
+                    <li>メンタルケア機能の品質改善</li>
+                    <li>保護者向けレポートの自動生成</li>
+                    <li>オンライン家庭教師の指導計画作成</li>
+                    <li>サービス利用規約違反の検出</li>
+                </ul>
+
+                <h2 class="text-2xl font-bold mb-4">3. 要配慮個人情報の取扱い</h2>
+                <p class="text-gray-700 mb-6">
+                    メンタルケア関連データは個人情報保護法第2条第3項に定義される要配慮個人情報として扱い、利用開始前に明示的同意を取得します。同意撤回時は直ちにデータ削除を実施します。
+                </p>
+                 <div class="bg-gray-100 p-4 rounded-md italic text-gray-700 overflow-x-auto mb-6">
+                     <pre><code># 同意管理システムの疑似コード
+def consent_management(user):
+    if user.withdraw_consent:
+        delete_mental_health_data(user.id)
+        send_confirmation_email(user.email)</code></pre>
+                 </div>
+
+
+                <h2 class="text-2xl font-bold mb-4">4. 第三者提供の管理</h2>
+                <h3 class="text-xl font-semibold mb-3">(1) 国内第三者</h3>
+                <p class="text-gray-700 mb-4">
+                    AI解析エンジン提供企業に対し、匿名加工処理後のデータを提供します。具体的な加工方法：
+                </p>
+                 <ul class="list-disc list-inside text-gray-700 mb-6">
+                     <li>個人識別子の暗号化（AES-256）</li>
+                     <li>年齢情報の範囲化（例：12-15歳→「中学生」）</li>
+                 </ul>
+                <h3 class="text-xl font-semibold mb-3">(2) 海外移転</h3>
+                 <p class="text-gray-700 mb-4">
+                    OpenAI等の海外ベンダーへデータを提供する場合、次の保護措置を講じます：
+                </p>
+                 <ul class="list-disc list-inside text-gray-700 mb-6">
+                     <li>EU一般データ保護規則（GDPR）準拠の契約条項</li>
+                     <li>データ移転影響評価の実施（年1回）</li>
+                     <li>移転先のプライバシーシールド認証状況の確認</li>
+                 </ul>
+
+
+                <h2 class="text-2xl font-bold mb-4">5. 安全管理措置</h2>
+                 <h3 class="text-xl font-semibold mb-3">組織的措置</h3>
+                 <ul class="list-disc list-inside text-gray-700 mb-6">
+                     <li>個人情報保護委員会の設置（月次監査実施）</li>
+                     <li>アクセス権限の役割ベース管理（RBAC）</li>
+                 </ul>
+                 <h3 class="text-xl font-semibold mb-3">技術的措置</h3>
+                 <ul class="list-disc list-inside text-gray-700 mb-6">
+                     <li>通信のTLS 1.3暗号化</li>
+                     <li>データベースの擬似化処理（Pseudonymization）</li>
+                     <li>多要素認証の義務化（管理者アクセス）</li>
+                 </ul>
+                 <h3 class="text-xl font-semibold mb-3">物理的措置</h3>
+                 <ul class="list-disc list-inside text-gray-700 mb-6">
+                     <li>サーバールームの生体認証入室管理</li>
+                     <li>書類のシュレッダー処理（ISO/IEC 21964準拠）</li>
+                 </ul>
+
+                <h2 class="text-2xl font-bold mb-4">6. 子どものデータ保護</h2>
+                 <p class="text-gray-700 mb-4">
+                    15歳未満の利用に関しては、保護者の同意を必須とし、次の特別措置を実施します：
+                </p>
+                 <ul class="list-disc list-inside text-gray-700 mb-6">
+                     <li>位置情報追跡のデフォルト無効化</li>
+                     <li>プロファイリング機能のオプトイン方式</li>
+                     <li>ナッジテクノロジー不使用保証</li>
+                     <li>親権者用監査ログの提供</li>
+                 </ul>
+
+                <h2 class="text-2xl font-bold mb-4">7. データ保存期間</h2>
+                 <div class="overflow-x-auto mb-6">
+                     <table class="min-w-full bg-white border border-gray-300">
+                         <thead>
+                             <tr>
+                                 <th class="py-2 px-4 border-b text-left">データ種類</th>
+                                 <th class="py-2 px-4 border-b text-left">保存期間</th>
+                                 <th class="py-2 px-4 border-b text-left">根拠</th>
+                             </tr>
+                         </thead>
+                         <tbody>
+                             <tr>
+                                 <td class="py-2 px-4 border-b">チャットログ</td>
+                                 <td class="py-2 px-4 border-b">6ヶ月</td>
+                                 <td class="py-2 px-4 border-b">品質管理</td>
+                             </tr>
+                              <tr>
+                                 <td class="py-2 px-4 border-b">学習進捗</td>
+                                 <td class="py-2 px-4 border-b">卒業後3年</td>
+                                 <td class="py-2 px-4 border-b">教育法第17条</td>
+                             </tr>
+                              <tr>
+                                 <td class="py-2 px-4 border-b">メンタルデータ</td>
+                                 <td class="py-2 px-4 border-b">同意撤回後30日</td>
+                                 <td class="py-2 px-4 border-b">GDPR第17条</td>
+                             </tr>
+                         </tbody>
+                     </table>
+                 </div>
+
+
+                <h2 class="text-2xl font-bold mb-4">8. 権利行使手続き</h2>
+                <p class="text-gray-700 mb-6">
+                    開示請求等の手続きは専用フォームより申請可能です。回答までに要する期間は14営業日以内とし、手数料は1請求あたり500円（未成年者無料）です。
+                </p>
+
+                <h2 class="text-2xl font-bold mb-4">9. コンプライアンス体制</h2>
+                 <ul class="list-disc list-inside text-gray-700 mb-6">
+                     <li>個人情報保護管理者：CPO（Chief Privacy Officer）</li>
+                     <li>苦情相談窓口：<a href="mailto:privacy@edumind.jp" class="text-indigo-600 hover:underline">privacy@edumind.jp</a>（24時間対応）</li>
+                     <li>監督当局：個人情報保護委員会</li>
+                 </ul>
+
+                <h2 class="text-2xl font-bold mb-4">10. 改定手続き</h2>
+                <p class="text-gray-700 mb-6">
+                    本ポリシーの改定はWebサイトへの掲載により効力を生じます。重要な変更がある場合は、登録ユーザーに事前通知します。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">EduMind Harmony</h3>
+                    <p class="text-gray-400">
+                        教育とメンタルケアの調和がもたらす、新しい学びのかたち。一人ひとりに寄り添った個別指導で可能性を最大化します。
+                    </p>
+                    <div class="mt-4 flex space-x-3">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">サービス</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html#ai-chatbot" class="hover:text-white transition">AIチャットボット</a></li>
+                        <li><a href="index.html#tutor" class="hover:text-white transition">オンライン個別指導</a></li>
+                        <li><a href="#" class="hover:text-white transition">不登校支援プログラム</a></li>
+                        <li><a href="#" class="hover:text-white transition">金融教育</a></li>
+                        <li><a href="#" class="hover:text-white transition">データ分析入門</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">リンク</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html#about" class="hover:text-white transition">サービス紹介</a></li>
+                        <li><a href="index.html#profile" class="hover:text-white transition">講師紹介</a></li>
+                        <li><a href="index.html#blog" class="hover:text-white transition">ブログ</a></li>
+                         <li><a href="privacy.html" class="hover:text-white transition">プライバシーポリシー</a></li>
+                        <li><a href="index.html#contact" class="hover:text-white transition">お問い合わせ</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">お問い合わせ</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1.5 mr-3 text-indigo-400"></i>
+                            <span>info@edumindharmony.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-clock mt-1.5 mr-3 text-indigo-400"></i>
+                            <span>対応時間: 平日 10:00-20:00</span>
+                        </li>
+                    </ul>
+                    <div class="mt-6">
+                        <a href="index.html#contact" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg transition">
+                            お問い合わせはこちら
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500">
+                <p>&copy; 2023 EduMind Harmony. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+     <script src="js/main.js"></script>
+</body>
+</html>
