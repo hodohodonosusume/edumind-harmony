@@ -3,993 +3,998 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EduMind Harmony | 教育×メンタルケアの調和</title> [cite: 1, 2]
-    <meta name="description" content="教育とメンタルケアを組み合わせた個別指導とAIサポートで学習体験を変革します。不登校支援、学習サポート、メンタルケアを一人の教師が提供する特化型サービス。"> [cite: 2]
-    <meta name="keywords" content="オンライン家庭教師, メンタルケア, AI教育, 不登校支援, 学習支援"> [cite: 2]
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"> [cite: 2]
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"> [cite: 2]
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"> [cite: 2]
-    </head>
+    <title>EduMind Harmony | 教育×メンタルケアの調和</title>
+    <meta name="description" content="教育とメンタルケアを組み合わせた個別指導とAIサポートで学習体験を変革します。不登校支援、学習サポート、メンタルケアを一人の教師が提供する特化型サービス。">
+    <meta name="keywords" content="オンライン家庭教師, メンタルケア, AI教育, 不登校支援, 学習支援">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
 <body>
-    <nav id="navbar" class="fixed w-full z-50 bg-transparent transition duration-300"> [cite: 34]
-        <div class="container mx-auto px-4 py-3"> [cite: 34]
-            <div class="flex justify-between items-center"> [cite: 34]
-                <a href="#" class="text-2xl font-bold text-white flex items-center"> [cite: 34]
-                    <i class="fas fa-brain mr-2"></i> [cite: 34, 35]
-                    <span>EduMind Harmony</span> [cite: 35]
-                </a> [cite: 35]
-                <div class="hidden md:flex space-x-6"> [cite: 35]
-                    <a href="#about" class="text-white hover:text-gray-200 transition">サービス紹介</a> [cite: 35]
-                    <a href="#ai-chatbot" class="text-white hover:text-gray-200 transition">AIチャットボット</a> [cite: 36]
-                    <a href="#tutor" class="text-white hover:text-gray-200 transition">オンライン指導</a> [cite: 36]
-                    <a href="#profile" class="text-white hover:text-gray-200 transition">講師紹介</a> [cite: 36]
-                    <a href="#blog" class="text-white hover:text-gray-200 transition">ブログ</a> [cite: 36]
-                    <a href="#contact" class="text-white hover:text-gray-200 transition">お問い合わせ</a> [cite: 36, 37]
-                </div> [cite: 37]
-                <div class="md:hidden"> [cite: 37]
-                    <button id="mobile-menu-button" class="text-white focus:outline-none"> [cite: 37]
-                        <i class="fas fa-bars text-2xl"></i> [cite: 37]
-                    </button> [cite: 38]
-                </div> [cite: 38]
-            </div> [cite: 38]
-        </div> [cite: 38]
-        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg absolute top-full left-0 right-0"> [cite: 38]
-            <div class="container mx-auto px-4 py-2"> [cite: 38]
-                <div class="flex flex-col space-y-3"> [cite: 38]
-                    <a href="#about" class="text-gray-800 hover:text-indigo-600 transition">サービス紹介</a> [cite: 39]
-                    <a href="#ai-chatbot" class="text-gray-800 hover:text-indigo-600 transition">AIチャットボット</a> [cite: 39]
-                    <a href="#tutor" class="text-gray-800 hover:text-indigo-600 transition">オンライン指導</a> [cite: 39]
-                    <a href="#profile" class="text-gray-800 hover:text-indigo-600 transition">講師紹介</a> [cite: 39]
-                    <a href="#blog" class="text-gray-800 hover:text-indigo-600 transition">ブログ</a> [cite: 40]
-                    <a href="#contact" class="text-gray-800 hover:text-indigo-600 transition">お問い合わせ</a> [cite: 40]
-                </div> [cite: 40]
-            </div> [cite: 40]
-        </div> [cite: 40]
-    </nav> [cite: 40]
+    <nav id="navbar" class="fixed w-full z-50 bg-transparent transition duration-300">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold text-white flex items-center">
+                    <i class="fas fa-brain mr-2"></i>
+                    <span>EduMind Harmony</span>
+                </a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#about" class="text-white hover:text-gray-200 transition">サービス紹介</a>
+                    <a href="#ai-chatbot" class="text-white hover:text-gray-200 transition">AIチャットボット</a>
+                    <a href="#tutor" class="text-white hover:text-gray-200 transition">オンライン指導</a>
+                    <a href="#profile" class="text-white hover:text-gray-200 transition">講師紹介</a>
+                    <a href="#blog" class="text-white hover:text-gray-200 transition">ブログ</a>
+                    <a href="#contact" class="text-white hover:text-gray-200 transition">お問い合わせ</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg absolute top-full left-0 right-0">
+            <div class="container mx-auto px-4 py-2">
+                <div class="flex flex-col space-y-3">
+                    <a href="#about" class="text-gray-800 hover:text-indigo-600 transition">サービス紹介</a>
+                    <a href="#ai-chatbot" class="text-gray-800 hover:text-indigo-600 transition">AIチャットボット</a>
+                    <a href="#tutor" class="text-gray-800 hover:text-indigo-600 transition">オンライン指導</a>
+                    <a href="#profile" class="text-gray-800 hover:text-indigo-600 transition">講師紹介</a>
+                    <a href="#blog" class="text-gray-800 hover:text-indigo-600 transition">ブログ</a>
+                    <a href="#contact" class="text-gray-800 hover:text-indigo-600 transition">お問い合わせ</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-    <header class="hero-gradient min-h-screen flex items-center relative overflow-hidden"> [cite: 40]
-        <div class="absolute inset-0 z-0 opacity-30"> [cite: 41]
-            <div class="absolute top-0 left-0 w-72 h-72 bg-white rounded-full filter blur-3xl"></div> [cite: 41]
-            <div class="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full filter blur-3xl"></div> [cite: 41]
-            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-white rounded-full filter blur-3xl"></div> [cite: 41]
-        </div> [cite: 41]
-        <div class="container mx-auto px-4 z-10"> [cite: 41]
-            <div class="flex flex-col md:flex-row items-center"> [cite: 42]
-                <div class="md:w-1/2 text-white" data-aos="fade-right" data-aos-duration="1000"> [cite: 42]
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"> [cite: 42]
-                        教育と<span class="text-yellow-300">メンタルケア</span>の調和 [cite: 42]
-                    </h1> [cite: 42]
-                    <p class="text-xl md:text-2xl mb-8"> [cite: 43]
-                        学びの可能性を解き放つ、一人ひとりに寄り添った個別指導とAIメンタルサポート [cite: 43]
-                    </p> [cite: 43]
-                    <div class="flex flex-wrap gap-4"> [cite: 43]
-                        <a href="#contact" class="btn-primary"> [cite: 44]
-                            <i class="fas fa-paper-plane mr-2"></i>無料相談する [cite: 44]
-                        </a> [cite: 44]
-                        <a href="#about" class="btn-secondary"> [cite: 44]
-                            <i class="fas fa-info-circle mr-2"></i>サービスを詳しく見る [cite: 45]
-                        </a> [cite: 45]
-                    </div> [cite: 45]
-                </div> [cite: 45]
-                <div class="md:w-1/2 mt-12 md:mt-0" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200"> [cite: 46]
-                    <div class="relative"> [cite: 46]
-                        <div class="bg-white p-8 rounded-2xl shadow-2xl max-w-md mx-auto"> [cite: 46]
-                            <div class="flex justify-between items-center mb-6"> [cite: 46]
-                                <div class="flex items-center"> [cite: 47]
-                                    <div class="rounded-full bg-indigo-100 p-2"> [cite: 47]
-                                        <i class="fas fa-robot text-indigo-600 text-xl"></i> [cite: 48]
-                                    </div> [cite: 48]
-                                    <h3 class="font-semibold text-gray-800 ml-3">AIメンタルケアチャット</h3> [cite: 48]
-                                </div> [cite: 49]
-                                <span class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">オンライン</span> [cite: 49]
-                            </div> [cite: 49]
-                            <div class="space-y-4"> [cite: 50]
-                                <div class="bg-gray-100 p-3 rounded-lg rounded-tl-none max-w-xs"> [cite: 50]
-                                    最近、勉強に集中できなくて困っています。 [cite: 50]
-                                </div> [cite: 51]
-                                <div class="bg-indigo-100 p-3 rounded-lg rounded-tr-none max-w-xs ml-auto text-indigo-800"> [cite: 51]
-                                    お気持ちを共有してくれてありがとう。集中が難しい時期はありますね。何か特に気になることがありますか？ [cite: 51]
-                                </div> [cite: 52]
-                                <div class="bg-gray-100 p-3 rounded-lg rounded-tl-none max-w-xs"> [cite: 52]
-                                    テスト前なのに不安で頭に入りません。 [cite: 52]
-                                </div> [cite: 53]
-                                <div class="bg-indigo-100 p-3 rounded-lg rounded-tr-none max-w-xs ml-auto text-indigo-800"> [cite: 53, 54]
-                                    テスト前の不安は自然なことです。まずは深呼吸をして、今日は何から始めたいですか？一緒に学習計画を立ててみましょう。 [cite: 54]
-                                </div> [cite: 54]
-                            </div> [cite: 54]
-                            <div class="mt-6 flex"> [cite: 54]
-                                <input type="text" class="flex-grow bg-gray-100 rounded-l-lg px-4 py-2 focus:outline-none" placeholder="メッセージを入力..."> [cite: 55]
-                                <button class="bg-indigo-600 text-white rounded-r-lg px-4"> [cite: 55]
-                                    <i class="fas fa-paper-plane"></i> [cite: 56]
-                                </button> [cite: 56]
-                            </div> [cite: 56]
-                        </div> [cite: 56]
-                        <div class="absolute -top-4 -left-4 w-24 h-24 bg-yellow-400 rounded-full z-[-1]"></div> [cite: 57]
-                        <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-indigo-400 rounded-full z-[-1]"></div> [cite: 57]
-                    </div> [cite: 57]
-                </div> [cite: 57]
-            </div> [cite: 58]
-        </div> [cite: 58]
-    </header> [cite: 58]
+    <header class="hero-gradient min-h-screen flex items-center relative overflow-hidden">
+        <div class="absolute inset-0 z-0 opacity-30">
+            <div class="absolute top-0 left-0 w-72 h-72 bg-white rounded-full filter blur-3xl"></div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full filter blur-3xl"></div>
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-white rounded-full filter blur-3xl"></div>
+        </div>
+        <div class="container mx-auto px-4 z-10">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 text-white" data-aos="fade-right" data-aos-duration="1000">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                        教育と<span class="text-yellow-300">メンタルケア</span>の調和
+                    </h1>
+                    <p class="text-xl md:text-2xl mb-8">
+                        学びの可能性を解き放つ、一人ひとりに寄り添った個別指導とAIメンタルサポート
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#contact" class="btn-primary">
+                            <i class="fas fa-paper-plane mr-2"></i>無料相談する
+                        </a>
+                        <a href="#about" class="btn-secondary">
+                            <i class="fas fa-info-circle mr-2"></i>サービスを詳しく見る
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 mt-12 md:mt-0" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="relative">
+                        <div class="bg-white p-8 rounded-2xl shadow-2xl max-w-md mx-auto">
+                            <div class="flex justify-between items-center mb-6">
+                                <div class="flex items-center">
+                                    <div class="rounded-full bg-indigo-100 p-2">
+                                        <i class="fas fa-robot text-indigo-600 text-xl"></i>
+                                    </div>
+                                    <h3 class="font-semibold text-gray-800 ml-3">AIメンタルケアチャット</h3>
+                                </div>
+                                <span class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">オンライン</span>
+                            </div>
+                            <div class="space-y-4">
+                                <div class="bg-gray-100 p-3 rounded-lg rounded-tl-none max-w-xs">
+                                    最近、勉強に集中できなくて困っています。
+                                </div>
+                                <div class="bg-indigo-100 p-3 rounded-lg rounded-tr-none max-w-xs ml-auto text-indigo-800">
+                                    お気持ちを共有してくれてありがとう。集中が難しい時期はありますね。何か特に気になることがありますか？
+                                </div>
+                                <div class="bg-gray-100 p-3 rounded-lg rounded-tl-none max-w-xs">
+                                    テスト前なのに不安で頭に入りません。
+                                </div>
+                                <div class="bg-indigo-100 p-3 rounded-lg rounded-tr-none max-w-xs ml-auto text-indigo-800">
+                                    テスト前の不安は自然なことです。まずは深呼吸をして、今日は何から始めたいですか？一緒に学習計画を立ててみましょう。
+                                </div>
+                            </div>
+                            <div class="mt-6 flex">
+                                <input type="text" class="flex-grow bg-gray-100 rounded-l-lg px-4 py-2 focus:outline-none" placeholder="メッセージを入力...">
+                                <button class="bg-indigo-600 text-white rounded-r-lg px-4">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="absolute -top-4 -left-4 w-24 h-24 bg-yellow-400 rounded-full z-[-1]"></div>
+                        <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-indigo-400 rounded-full z-[-1]"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
-    <section id="about" class="section bg-white"> [cite: 58]
-        <div class="container mx-auto px-4"> [cite: 58]
-            <div class="text-center mb-16"> [cite: 58]
-                <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">教育とメンタルケアの新しいカタチ</h2> [cite: 58]
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100"> [cite: 58]
-                    EduMind Harmonyは、学びの中で生じる心の課題にも寄り添う、次世代の教育サービスです。 [cite: 59]
-                    学習指導と精神的サポートを融合させた独自のアプローチで、一人ひとりの可能性を最大限に引き出します。 [cite: 59]
-                </p> [cite: 59]
-            </div> [cite: 59]
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8"> [cite: 59]
-                <div class="card bg-white p-6 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="100"> [cite: 60]
-                    <div class="feature-icon mx-auto"> [cite: 60]
-                        <i class="fas fa-brain text-2xl"></i> [cite: 60]
-                    </div> [cite: 60]
-                    <h3 class="text-xl font-bold mb-4 text-center">AIチャットボットによるメンタルケア</h3> [cite: 61]
-                    <p class="text-gray-600"> [cite: 61]
-                        学習中の不安や課題をAIが24時間サポート。学習の障壁となる心理的な壁を取り除きます。 [cite: 61]
-                    </p> [cite: 61]
-                </div> [cite: 61]
-                
-                <div class="card bg-white p-6 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="200"> [cite: 62]
-                    <div class="feature-icon mx-auto"> [cite: 62]
-                        <i class="fas fa-chalkboard-teacher text-2xl"></i> [cite: 62]
-                    </div> [cite: 62]
-                    <h3 class="text-xl font-bold mb-4 text-center">個別最適化されたオンライン指導</h3> [cite: 63]
-                    <p class="text-gray-600"> [cite: 63]
-                        一人の教師が、一人ひとりの個性や学習スタイルに合わせた指導を提供します。 [cite: 63]
-                    </p> [cite: 63]
-                </div> [cite: 64]
-                
-                <div class="card bg-white p-6 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="300"> [cite: 64]
-                    <div class="feature-icon mx-auto"> [cite: 64]
-                        <i class="fas fa-chart-line text-2xl"></i> [cite: 64]
-                    </div> [cite: 65]
-                    <h3 class="text-xl font-bold mb-4 text-center">データに基づく学習分析</h3> [cite: 65]
-                    <p class="text-gray-600"> [cite: 65]
-                        学習進捗と心理状態を統合分析し、最適な学習プランを継続的に提案します。 [cite: 65]
-                    </p> [cite: 66]
-                </div> [cite: 66]
-            </div> [cite: 66]
-            
-            <div class="mt-16 text-center"> [cite: 66]
-                <p class="text-lg text-gray-700 mb-6" data-aos="fade-up"> [cite: 66]
-                    <strong>EduMind Harmonyの特徴</strong>：一人の教師による一貫した指導と、 [cite: 66]
-                    AIによる24時間メンタルサポートの組み合わせで、学習の継続性と精神的な安定を両立させます。 [cite: 67]
-                </p> [cite: 67]
-                <a href="#tutor" class="btn-primary" data-aos="fade-up" data-aos-delay="100"> [cite: 67]
-                    <i class="fas fa-arrow-right mr-2"></i>サービス詳細を見る [cite: 67]
-                </a> [cite: 67]
-            </div> [cite: 68]
-        </div> [cite: 68]
-    </section> [cite: 68]
+    <section id="about" class="section bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">教育とメンタルケアの新しいカタチ</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    EduMind Harmonyは、学びの中で生じる心の課題にも寄り添う、次世代の教育サービスです。
+                    学習指導と精神的サポートを融合させた独自のアプローチで、一人ひとりの可能性を最大限に引き出します。
+                </p>
+            </div>
 
-    <section id="ai-chatbot" class="section bg-gray-50"> [cite: 68]
-        <div class="container mx-auto px-4"> [cite: 68]
-            <div class="text-center mb-12"> [cite: 68]
-                <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">AIチャットボットによるメンタルケア</h2> [cite: 68]
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100"> [cite: 68]
-                    学習における心理的障壁を取り除き、継続的な成長をサポートする最新のAI技術を活用したメンタルケアシステム [cite: 69]
-                </p> [cite: 69]
-            </div> [cite: 69]
-            
-            <div class="flex flex-col md:flex-row items-center"> [cite: 69]
-                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8" data-aos="fade-right"> [cite: 69]
-                    <div class="bg-white rounded-xl shadow-lg p-6 relative"> [cite: 70]
-                        <div class="absolute -top-3 -right-3 bg-indigo-600 text-white rounded-full w-12 h-12 flex items-center justify-center"> [cite: 70]
-                            <i class="fas fa-robot text-xl"></i> [cite: 70]
-                        </div> [cite: 71]
-                        <h3 class="text-2xl font-bold mb-4">メンタルケアアルゴリズム</h3> [cite: 71]
-                        <div class="space-y-4"> [cite: 71]
-                            <div class="flex items-start"> [cite: 71]
-                                <div class="bg-indigo-100 rounded-full p-2 mr-4 mt-1"> [cite: 72]
-                                    <i class="fas fa-brain text-indigo-600"></i> [cite: 72]
-                                </div> [cite: 72]
-                                <div> [cite: 73]
-                                    <h4 class="font-semibold">感情分析エンジン</h4> [cite: 73]
-                                    <p class="text-gray-600">文章から感情状態を分析し、適切なサポートメッセージを提供</p> [cite: 74]
-                                </div> [cite: 74]
-                            </div> [cite: 74]
-                            
-                            <div class="flex items-start"> [cite: 75]
-                                <div class="bg-indigo-100 rounded-full p-2 mr-4 mt-1"> [cite: 75]
-                                    <i class="fas fa-chart-bar text-indigo-600"></i> [cite: 75]
-                                </div> [cite: 76]
-                                <div> [cite: 76]
-                                    <h4 class="font-semibold">学習パターン認識</h4> [cite: 77]
-                                    <p class="text-gray-600">学習行動と感情状態の相関を分析し、最適な学習タイミングを提案</p> [cite: 77]
-                                </div> [cite: 77]
-                            </div> [cite: 77]
-                            
-                            <div class="flex items-start"> [cite: 78]
-                                <div class="bg-indigo-100 rounded-full p-2 mr-4 mt-1"> [cite: 78]
-                                    <i class="fas fa-shield-alt text-indigo-600"></i> [cite: 79]
-                                </div> [cite: 79]
-                                <div> [cite: 79]
-                                    <h4 class="font-semibold">安全対策プロセス</h4> [cite: 80]
-                                    <p class="text-gray-600">プライバシー保護とデータセキュリティを最優先した設計</p> [cite: 80]
-                                </div> [cite: 81]
-                            </div> [cite: 81]
-                            
-                            <div class="flex items-start"> [cite: 81]
-                                <div class="bg-indigo-100 rounded-full p-2 mr-4 mt-1"> [cite: 82]
-                                    <i class="fas fa-sync-alt text-indigo-600"></i> [cite: 82]
-                                </div> [cite: 82]
-                                <div> [cite: 83]
-                                    <h4 class="font-semibold">継続的学習システム</h4> [cite: 83]
-                                    <p class="text-gray-600">ユーザーとの対話から常に学習し、サポートの質を向上</p> [cite: 84]
-                                </div> [cite: 84]
-                            </div> [cite: 84]
-                        </div> [cite: 84]
-                    </div> [cite: 85]
-                </div> [cite: 85]
-                
-                <div class="md:w-1/2" data-aos="fade-left" data-aos-delay="100"> [cite: 85]
-                    <h3 class="text-2xl font-bold mb-6">こんな場面で活躍します</h3> [cite: 85]
-                    
-                    <div class="space-y-6"> [cite: 86]
-                        <div class="bg-white p-4 rounded-lg shadow-md"> [cite: 86]
-                            <div class="flex items-center mb-3"> [cite: 86]
-                                <div class="bg-yellow-100 p-2 rounded-full"> [cite: 87]
-                                    <i class="fas fa-exclamation-circle text-yellow-500"></i> [cite: 87]
-                                </div> [cite: 87]
-                                <h4 class="font-semibold ml-3">テスト前の不安軽減</h4> [cite: 88]
-                            </div> [cite: 88]
-                            <p class="text-gray-600"> [cite: 88]
-                                テスト前の緊張や不安を和らげるリラクゼーションテクニックやポジティブな思考法を提案します。 [cite: 89]
-                            </p> [cite: 89]
-                        </div> [cite: 89]
-                        
-                        <div class="bg-white p-4 rounded-lg shadow-md"> [cite: 90]
-                            <div class="flex items-center mb-3"> [cite: 90]
-                                <div class="bg-green-100 p-2 rounded-full"> [cite: 90]
-                                    <i class="fas fa-clock text-green-500"></i> [cite: 91]
-                                </div> [cite: 91]
-                                <h4 class="font-semibold ml-3">モチベーション低下時のサポート</h4> [cite: 91]
-                            </div> [cite: 92]
-                            <p class="text-gray-600"> [cite: 92]
-                                やる気が出ないときに、個人の興味や目標に合わせた動機付けメッセージを提供します。 [cite: 92]
-                            </p> [cite: 93]
-                        </div> [cite: 93]
-                        
-                        <div class="bg-white p-4 rounded-lg shadow-md"> [cite: 93]
-                            <div class="flex items-center mb-3"> [cite: 94]
-                                <div class="bg-red-100 p-2 rounded-full"> [cite: 94]
-                                    <i class="fas fa-heart-broken text-red-500"></i> [cite: 94]
-                                </div> [cite: 95]
-                                <h4 class="font-semibold ml-3">挫折感への対応</h4> [cite: 95]
-                            </div> [cite: 95]
-                            <p class="text-gray-600"> [cite: 96]
-                                難しい問題で挫折を感じたときに、具体的なステップに分解して取り組む方法を提案します。 [cite: 96]
-                            </p> [cite: 96]
-                        </div> [cite: 96]
-                        
-                        <div class="bg-white p-4 rounded-lg shadow-md"> [cite: 97]
-                            <div class="flex items-center mb-3"> [cite: 97]
-                                <div class="bg-blue-100 p-2 rounded-full"> [cite: 98]
-                                    <i class="fas fa-moon text-blue-500"></i> [cite: 98]
-                                </div> [cite: 98]
-                                <h4 class="font-semibold ml-3">24時間の心の相談相手</h4> [cite: 99]
-                            </div> [cite: 99]
-                            <p class="text-gray-600"> [cite: 99]
-                                夜遅くなど、誰にも相談できない時間帯でも、常に話を聞き、共感的に応答します。 [cite: 100]
-                            </p> [cite: 100]
-                        </div> [cite: 100]
-                    </div> [cite: 100]
-                </div> [cite: 100]
-            </div> [cite: 101]
-            
-            <div class="mt-16 text-center"> [cite: 101]
-                <a href="#contact" class="btn-primary" data-aos="fade-up"> [cite: 101]
-                    <i class="fas fa-robot mr-2"></i>AIチャットボットを試してみる [cite: 101]
-                </a> [cite: 101]
-            </div> [cite: 101]
-        </div> [cite: 102]
-    </section> [cite: 102]
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card bg-white p-6 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon mx-auto">
+                        <i class="fas fa-brain text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-center">AIチャットボットによるメンタルケア</h3>
+                    <p class="text-gray-600">
+                        学習中の不安や課題をAIが24時間サポート。学習の障壁となる心理的な壁を取り除きます。
+                    </p>
+                </div>
 
-    <section id="tutor" class="section bg-white"> [cite: 102]
-        <div class="container mx-auto px-4"> [cite: 102]
-            <div class="text-center mb-12"> [cite: 102]
-                <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">オンライン個別指導</h2> [cite: 102]
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100"> [cite: 102]
-                    一人ひとりの学習スタイルと目標に合わせた、きめ細やかな個別指導 [cite: 103]
-                </p> [cite: 103]
-            </div> [cite: 103]
-            
-            <div class="flex flex-col md:flex-row items-center mb-16"> [cite: 103]
-                <div class="md:w-1/2 md:pr-8 mb-8 md:mb-0" data-aos="fade-right"> [cite: 103]
-                    <h3 class="text-2xl font-bold mb-4">指導科目一覧</h3> [cite: 104]
-                    
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4"> [cite: 104]
-                        <div class="bg-white rounded-lg shadow p-4 border-l-4 border-indigo-600"> [cite: 104]
-                            <h4 class="font-semibold mb-2">小学生</h4> [cite: 105]
-                            <ul class="text-gray-600 space-y-1"> [cite: 105]
-                                <li><i class="fas fa-check text-indigo-600 mr-2"></i>国語・算数</li> [cite: 105]
-                                <li><i class="fas fa-check text-indigo-600 mr-2"></i>理科・社会</li> [cite: 106]
-                                <li><i class="fas fa-check text-indigo-600 mr-2"></i>英語・プログラミング</li> [cite: 106]
-                            </ul> [cite: 106]
-                        </div> [cite: 107]
-                        
-                        <div class="bg-white rounded-lg shadow p-4 border-l-4 border-indigo-600"> [cite: 107]
-                            <h4 class="font-semibold mb-2">中学生</h4> [cite: 107]
-                            <ul class="text-gray-600 space-y-1"> [cite: 108]
-                                <li><i class="fas fa-check text-indigo-600 mr-2"></i>数学・英語</li> [cite: 108]
-                                <li><i class="fas fa-check text-indigo-600 mr-2"></i>国語・理科・社会</li> [cite: 108]
-                                <li><i class="fas fa-check text-indigo-600 mr-2"></i>高校受験対策</li> [cite: 109]
-                            </ul> [cite: 109]
-                        </div> [cite: 109]
-                        
-                        <div class="bg-white rounded-lg shadow p-4 border-l-4 border-indigo-600"> [cite: 110]
-                            <h4 class="font-semibold mb-2">高校生</h4> [cite: 110]
-                            <ul class="text-gray-600 space-y-1"> [cite: 110]
-                                <li><i class="fas fa-check text-indigo-600 mr-2"></i>数学I・II・III・A・B</li> [cite: 111]
-                                <li><i class="fas fa-check text-indigo-600 mr-2"></i>英語・現代文・古典</li> [cite: 111]
-                                <li><i class="fas fa-check text-indigo-600 mr-2"></i>物理・化学・生物・地学</li> [cite: 112]
-                                <li><i class="fas fa-check text-indigo-600 mr-2"></i>大学受験対策</li> [cite: 112]
-                            </ul> [cite: 112]
-                        </div> [cite: 112]
-                        
-                        <div class="bg-white rounded-lg shadow p-4 border-l-4 border-indigo-600"> [cite: 113]
-                            <h4 class="font-semibold mb-2">特別コース</h4> [cite: 113]
-                            <ul class="text-gray-600 space-y-1"> [cite: 114]
-                                <li><i class="fas fa-check text-indigo-600 mr-2"></i>不登校支援プログラム</li> [cite: 114]
-                                <li><i class="fas fa-check text-indigo-600 mr-2"></i>金融・投資教育</li> [cite: 114]
-                                <li><i class="fas fa-check text-indigo-600 mr-2"></i>データ分析入門</li> [cite: 115]
-                            </ul> [cite: 115]
-                        </div> [cite: 115]
-                    </div> [cite: 115]
-                </div> [cite: 115]
-                
-                <div class="md:w-1/2" data-aos="fade-left" data-aos-delay="100"> [cite: 116]
-                    <h3 class="text-2xl font-bold mb-4">特徴的なカリキュラム設計</h3> [cite: 116]
-                    
-                    <div class="space-y-6"> [cite: 116]
-                        <div class="bg-gradient-to-r from-indigo-50 to-purple-50 p-5 rounded-lg"> [cite: 117]
-                            <h4 class="font-semibold text-lg mb-2">メンタル×学習の統合アプローチ</h4> [cite: 117]
-                            <p class="text-gray-700"> [cite: 117]
-                                学習内容だけでなく、学びへの姿勢や心理状態も含めた総合的な成長を促す独自カリキュラム [cite: 118]
-                            </p> [cite: 118]
-                        </div> [cite: 118]
-                        
-                        <div class="bg-gradient-to-r from-indigo-50 to-purple-50 p-5 rounded-lg"> [cite: 119]
-                            <h4 class="font-semibold text-lg mb-2">実社会とつながる学び</h4> [cite: 119]
-                            <p class="text-gray-700"> [cite: 119]
-                                投資教育やデータ分析など、将来役立つ実践的スキルを教科学習と関連付けて指導 [cite: 120]
-                            </p> [cite: 120]
-                        </div> [cite: 120]
-                        
-                        <div class="bg-gradient-to-r from-indigo-50 to-purple-50 p-5 rounded-lg"> [cite: 121]
-                            <h4 class="font-semibold text-lg mb-2">不登校経験からの回復プログラム</h4> [cite: 121]
-                            <p class="text-gray-700"> [cite: 121]
-                                不登校支援員としての経験を活かし、学校復帰や自己肯定感回復への段階的なアプローチ [cite: 122]
-                            </p> [cite: 122]
-                        </div> [cite: 122]
-                        
-                        <div class="bg-gradient-to-r from-indigo-50 to-purple-50 p-5 rounded-lg"> [cite: 123]
-                            <h4 class="font-semibold text-lg mb-2">個別進度調整システム</h4> [cite: 123]
-                            <p class="text-gray-700"> [cite: 123]
-                                一人の講師が一貫して担当するからこそ実現する、日々の状態に合わせた柔軟な進度調整 [cite: 124]
-                            </p> [cite: 124]
-                        </div> [cite: 124]
-                    </div> [cite: 124]
-                </div> [cite: 124]
-            </div> [cite: 125]
-            
-            <div class="mt-12 bg-indigo-50 p-6 rounded-xl shadow-md" data-aos="fade-up"> [cite: 125]
-                <h3 class="text-2xl font-bold mb-4 text-center">指導スタイル</h3> [cite: 125]
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6"> [cite: 125]
-                    <div class="text-center"> [cite: 126]
-                        <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow"> [cite: 126]
-                            <i class="fas fa-video text-2xl text-indigo-600"></i> [cite: 126]
-                        </div> [cite: 126]
-                        <h4 class="font-semibold mb-2">ビデオ通話指導</h4> [cite: 127]
-                        <p class="text-gray-600">Zoomを使用した双方向コミュニケーション</p> [cite: 127]
-                    </div> [cite: 127]
-                    
-                    <div class="text-center"> [cite: 128]
-                        <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow"> [cite: 128]
-                            <i class="fas fa-edit text-2xl text-indigo-600"></i> [cite: 128]
-                        </div> [cite: 128]
-                        <h4 class="font-semibold mb-2">デジタル教材</h4> [cite: 129]
-                        <p class="text-gray-600">タブレットで共有できる独自開発教材</p> [cite: 129]
-                    </div> [cite: 129]
-                    
-                    <div class="text-center"> [cite: 130]
-                        <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow"> [cite: 130]
-                            <i class="fas fa-calendar-alt text-2xl text-indigo-600"></i> [cite: 130]
-                        </div> [cite: 130]
-                        <h4 class="font-semibold mb-2">柔軟なスケジュール</h4> [cite: 131]
-                        <p class="text-gray-600">生徒の状況に合わせた時間設定</p> [cite: 131]
-                    </div> [cite: 131]
-                </div> [cite: 131]
-            </div> [cite: 131]
-        </div> [cite: 132]
-    </section> [cite: 132]
+                <div class="card bg-white p-6 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon mx-auto">
+                        <i class="fas fa-chalkboard-teacher text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-center">個別最適化されたオンライン指導</h3>
+                    <p class="text-gray-600">
+                        一人の教師が、一人ひとりの個性や学習スタイルに合わせた指導を提供します。
+                    </p>
+                </div>
 
-    <section id="profile" class="section bg-gray-50"> [cite: 132]
-        <div class="container mx-auto px-4"> [cite: 132]
-            <div class="text-center mb-12"> [cite: 132]
-                <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">講師紹介</h2> [cite: 132]
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100"> [cite: 132]
-                    教育とメンタルケアのプロフェッショナルとして、一人ひとりの可能性を最大限に引き出します [cite: 133]
-                </p> [cite: 133]
-            </div> [cite: 133]
-            
-            <div class="flex flex-col md:flex-row items-center"> [cite: 133]
-                <div class="md:w-1/3 mb-8 md:mb-0" data-aos="fade-right"> [cite: 133]
-                    <div class="bg-white rounded-xl shadow-lg p-6 relative"> [cite: 134]
-                        <div class="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden shadow-lg border-4 border-indigo-100"> [cite: 134]
-                            <div class="w-full h-full bg-gradient-to-br from-indigo-400 to-purple-500 flex items-center justify-center"> [cite: 134]
-                                <i class="fas fa-user-graduate text-white text-5xl"></i> [cite: 135]
-                            </div> [cite: 135]
-                        </div> [cite: 135]
-                        
-                        <h3 class="text-2xl font-bold mb-2 text-center">EduMind講師</h3> [cite: 136]
-                        <div class="text-center text-gray-600 mb-4"> [cite: 136]
-                            <span class="bg-indigo-100 text-indigo-800 text-sm rounded-full px-3 py-1">教育とメンタルケアのスペシャリスト</span> [cite: 136]
-                        </div> [cite: 137]
-                        
-                        <div class="space-y-3 text-center"> [cite: 137]
-                            <div> [cite: 137]
-                                <a href="#contact" class="inline-block bg-indigo-600 text-white rounded-full px-6 py-2 transition hover:bg-indigo-700"> [cite: 138]
-                                    <i class="fas fa-envelope mr-2"></i>お問い合わせ [cite: 138]
-                                </a> [cite: 138]
-                            </div> [cite: 139]
-                            <p class="text-gray-500 text-sm"> [cite: 139]
-                                <i class="fas fa-clock mr-1"></i>24時間以内にご返信します [cite: 139]
-                            </p> [cite: 140]
-                        </div> [cite: 140]
-                    </div> [cite: 140]
-                </div> [cite: 140]
-                
-                <div class="md:w-2/3 md:pl-12" data-aos="fade-left" data-aos-delay="100"> [cite: 141]
-                    <div class="bg-white rounded-lg shadow-md p-6"> [cite: 141]
-                        <h3 class="text-2xl font-bold mb-4">資格・経歴</h3> [cite: 141]
-                        
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6"> [cite: 142]
-                            <div class="flex items-center"> [cite: 142]
-                                <div class="bg-indigo-100 p-3 rounded-full mr-3"> [cite: 142]
-                                    <i class="fas fa-graduation-cap text-indigo-600"></i> [cite: 143]
-                                </div> [cite: 143]
-                                <span>小学校・中学校・高等学校教諭一種免許</span> [cite: 143]
-                            </div> [cite: 144]
-                            
-                            <div class="flex items-center"> [cite: 144]
-                                <div class="bg-green-100 p-3 rounded-full mr-3"> [cite: 145]
-                                    <i class="fas fa-chart-pie text-green-600"></i> [cite: 145]
-                                </div> [cite: 145]
-                                <span>ファイナンシャルプランナー</span> [cite: 146]
-                            </div> [cite: 146]
-                            
-                            <div class="flex items-center"> [cite: 146]
-                                <div class="bg-blue-100 p-3 rounded-full mr-3"> [cite: 147]
-                                    <i class="fas fa-coins text-blue-600"></i> [cite: 147]
-                                </div> [cite: 148]
-                                <span>資産運用検定2級</span> [cite: 148]
-                            </div> [cite: 148]
-                            
-                            <div class="flex items-center"> [cite: 149]
-                                <div class="bg-purple-100 p-3 rounded-full mr-3"> [cite: 149]
-                                    <i class="fas fa-database text-purple-600"></i> [cite: 149]
-                                </div> [cite: 150]
-                                <span>データアナリスト</span> [cite: 150]
-                            </div> [cite: 150]
-                            
-                            <div class="flex items-center"> [cite: 151]
-                                <div class="bg-yellow-100 p-3 rounded-full mr-3"> [cite: 151]
-                                    <i class="fas fa-hands-helping text-yellow-600"></i> [cite: 152]
-                                </div> [cite: 152]
-                                <span>元不登校支援員</span> [cite: 152]
-                            </div> [cite: 153]
-                        </div> [cite: 153]
-                        
-                        <h4 class="font-bold text-lg mb-3">指導実績</h4> [cite: 153]
-                        <div class="bg-gray-50 p-4 rounded-lg mb-6"> [cite: 154]
-                            <div class="flex items-center mb-2"> [cite: 154]
-                                <i class="fas fa-users text-indigo-600 mr-2"></i> [cite: 154]
-                                <span class="font-semibold">200人以上</span>の生徒を指導 [cite: 155]
-                            </div> [cite: 155]
-                            <div class="flex items-center"> [cite: 155]
-                                <i class="fas fa-school text-indigo-600 mr-2"></i> [cite: 156]
-                                <span>旧帝大、早稲田大学、MARCH等</span>の合格実績 [cite: 156]
-                            </div> [cite: 156]
-                        </div> [cite: 156]
-                        
-                        <h4 class="font-bold text-lg mb-3">趣味・特技</h4> [cite: 157]
-                        <div class="flex flex-wrap gap-2"> [cite: 157]
-                            <span class="bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full text-sm"> [cite: 157, 158]
-                                <i class="fas fa-basketball-ball mr-1"></i>バスケ [cite: 158]
-                            </span> [cite: 158]
-                            <span class="bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full text-sm"> [cite: 158, 159]
-                                <i class="fas fa-volleyball-ball mr-1"></i>バレー [cite: 159]
-                            </span> [cite: 159]
-                            <span class="bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full text-sm"> [cite: 159]
-                                <i class="fas fa-table-tennis mr-1"></i>バドミントン [cite: 160]
-                            </span> [cite: 160]
-                            <span class="bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full text-sm"> [cite: 160]
-                                <i class="fas fa-utensils mr-1"></i>料理 [cite: 161]
-                            </span> [cite: 161]
-                            <span class="bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full text-sm"> [cite: 161]
-                                <i class="fas fa-microphone mr-1"></i>カラオケ [cite: 162]
-                            </span> [cite: 162]
-                            <span class="bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full text-sm"> [cite: 162]
-                                <i class="fas fa-chess-board mr-1"></i>囲碁 [cite: 163]
-                            </span> [cite: 163]
-                        </div> [cite: 163]
-                        
-                        <div class="mt-6"> [cite: 164]
-                            <h4 class="font-bold text-lg mb-3">メッセージ</h4> [cite: 164]
-                            <blockquote class="border-l-4 border-indigo-500 pl-4 italic text-gray-600"> [cite: 164]
-                                私の経験と専門知識を活かし、学習面だけでなく精神的な支えとしても皆さんの成長をサポートします。 [cite: 165]
-                                一人ひとりに合った学び方と向き合い方を一緒に見つけていきましょう。 [cite: 165]
-                            </blockquote> [cite: 165]
-                        </div> [cite: 166]
-                    </div> [cite: 166]
-                </div> [cite: 166]
-            </div> [cite: 166]
-        </div> [cite: 166]
-    </section> [cite: 166]
+                <div class="card bg-white p-6 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon mx-auto">
+                        <i class="fas fa-chart-line text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-center">データに基づく学習分析</h3>
+                    <p class="text-gray-600">
+                        学習進捗と心理状態を統合分析し、最適な学習プランを継続的に提案します。
+                    </p>
+                </div>
+            </div>
 
-    <section class="section bg-white"> [cite: 166]
-        <div class="container mx-auto px-4"> [cite: 166]
-            <div class="text-center mb-12"> [cite: 167]
-                <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">保護者向け機能</h2> [cite: 167]
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100"> [cite: 167]
-                    お子様の学習状況を見守りながら、成長をサポートするための機能 [cite: 167]
-                </p> [cite: 167]
-            </div> [cite: 167]
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8"> [cite: 168]
-                <div class="card bg-white p-6 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="100"> [cite: 168]
-                    <div class="feature-icon mx-auto"> [cite: 168]
-                        <i class="fas fa-chart-bar text-2xl"></i> [cite: 168]
-                    </div> [cite: 169]
-                    <h3 class="text-xl font-bold mb-4 text-center">詳細な学習レポート</h3> [cite: 169]
-                    <p class="text-gray-600 mb-4"> [cite: 169]
-                        週次・月次の学習状況、理解度、課題点などを視覚的にまとめたレポートを提供します。 [cite: 169]
-                    </p> [cite: 170]
-                    <div class="bg-indigo-50 p-3 rounded-lg"> [cite: 170]
-                        <div class="flex items-center mb-2"> [cite: 170]
-                            <i class="fas fa-chart-line text-indigo-600 mr-2"></i> [cite: 170]
-                            <span class="font-semibold">レポート例：</span> [cite: 171]
-                        </div> [cite: 171]
-                        <ul class="text-sm text-gray-700 space-y-1"> [cite: 171]
-                            <li>• 学習時間の推移グラフ</li> [cite: 171]
-                            <li>• 科目別理解度評価</li> [cite: 172]
-                            <li>• 課題解決力の変化</li> [cite: 172]
-                            <li>• 次月の学習目標提案</li> [cite: 172]
-                        </ul> [cite: 173]
-                    </div> [cite: 173]
-                </div> [cite: 173]
-                
-                <div class="card bg-white p-6 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="200"> [cite: 173]
-                    <div class="feature-icon mx-auto"> [cite: 174]
-                        <i class="fas fa-shield-alt text-2xl"></i> [cite: 174]
-                    </div> [cite: 174]
-                    <h3 class="text-xl font-bold mb-4 text-center">プライバシー保護</h3> [cite: 174]
-                    <p class="text-gray-600 mb-4"> [cite: 174]
-                        お子様の自律性を尊重しながら、適切な情報共有を実現する細やかな設定が可能です。 [cite: 175]
-                    </p> [cite: 175]
-                    <div class="bg-indigo-50 p-3 rounded-lg"> [cite: 175]
-                        <div class="flex items-center mb-2"> [cite: 175]
-                            <i class="fas fa-user-shield text-indigo-600 mr-2"></i> [cite: 176]
-                            <span class="font-semibold">カスタマイズ可能な設定：</span> [cite: 176]
-                        </div> [cite: 176]
-                        <ul class="text-sm text-gray-700 space-y-1"> [cite: 177]
-                            <li>• 共有情報の範囲設定</li> [cite: 177]
-                            <li>• メンタル関連情報の共有レベル</li> [cite: 177]
-                            <li>• 通知頻度のカスタマイズ</li> [cite: 177]
-                            <li>• データ保護・匿名化オプション</li> [cite: 178]
-                        </ul> [cite: 178]
-                    </div> [cite: 178]
-                </div> [cite: 178]
-                
-                <div class="card bg-white p-6 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="300"> [cite: 179]
-                    <div class="feature-icon mx-auto"> [cite: 179]
-                        <i class="fas fa-comments text-2xl"></i> [cite: 179]
-                    </div> [cite: 179]
-                    <h3 class="text-xl font-bold mb-4 text-center">定期的なコンサルテーション</h3> [cite: 180]
-                    <p class="text-gray-600 mb-4"> [cite: 180]
-                        教師との直接面談で学習方針やご家庭でのサポート方法について相談できます。 [cite: 180]
-                    </p> [cite: 180]
-                    <div class="bg-indigo-50 p-3 rounded-lg"> [cite: 180]
-                        <div class="flex items-center mb-2"> [cite: 181]
-                            <i class="fas fa-calendar-check text-indigo-600 mr-2"></i> [cite: 181]
-                            <span class="font-semibold">コンサルテーション内容：</span> [cite: 181]
-                        </div> [cite: 182]
-                        <ul class="text-sm text-gray-700 space-y-1"> [cite: 182]
-                            <li>• 学習進捗の詳細説明</li> [cite: 182]
-                            <li>• 家庭でのサポート方法提案</li> [cite: 182]
-                            <li>• 目標設定の共同作成</li> [cite: 183]
-                            <li>• 質問・相談への回答</li> [cite: 183]
-                        </ul> [cite: 183]
-                    </div> [cite: 183]
-                </div> [cite: 184]
-            </div> [cite: 184]
-            
-            <div class="mt-16 bg-indigo-50 rounded-xl p-8 shadow-md" data-aos="fade-up"> [cite: 184]
-                <h3 class="text-2xl font-bold mb-6 text-center">保護者の声</h3> [cite: 184]
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6"> [cite: 185]
-                    <div class="bg-white p-5 rounded-lg shadow relative"> [cite: 185]
-                        <div class="absolute -top-4 -left-4 bg-indigo-600 text-white rounded-full w-8 h-8 flex items-center justify-center"> [cite: 185]
-                            <i class="fas fa-quote-left"></i> [cite: 186]
-                        </div> [cite: 186]
-                        <p class="italic text-gray-600 mb-4"> [cite: 186]
-                            不登校だった息子が、AIチャットとの対話を重ねるうちに少しずつ自分の気持ちを言語化できるようになりました。 [cite: 186]
-                            定期的な学習レポートで成長を実感できることが、親子のポジティブな会話につながっています。 [cite: 187]
-                        </p> [cite: 187]
-                        <div class="flex items-center"> [cite: 187]
-                            <div class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center mr-3"> [cite: 187]
-                                <i class="fas fa-user text-indigo-600"></i> [cite: 188]
-                            </div> [cite: 188]
-                            <div> [cite: 188]
-                                <div class="font-semibold">中学2年生の保護者様</div> [cite: 189]
-                                <div class="text-xs text-gray-500">不登校サポート利用</div> [cite: 189]
-                            </div> [cite: 189]
-                        </div> [cite: 190]
-                    </div> [cite: 190]
-                    
-                    <div class="bg-white p-5 rounded-lg shadow relative"> [cite: 190]
-                        <div class="absolute -top-4 -left-4 bg-indigo-600 text-white rounded-full w-8 h-8 flex items-center justify-center"> [cite: 190, 191]
-                            <i class="fas fa-quote-left"></i> [cite: 191]
-                        </div> [cite: 191]
-                        <p class="italic text-gray-600 mb-4"> [cite: 191]
-                            テスト前のプレッシャーで娘が悩んでいるときに、AIメンタルケアが大きな支えになっています。 [cite: 192]
-                            学習だけでなく、メンタル面も含めたトータルサポートが本当に心強いです。 [cite: 192]
-                        </p> [cite: 192]
-                        <div class="flex items-center"> [cite: 192]
-                            <div class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center mr-3"> [cite: 193]
-                                <i class="fas fa-user text-indigo-600"></i> [cite: 193]
-                            </div> [cite: 193]
-                            <div> [cite: 194]
-                                <div class="font-semibold">高校1年生の保護者様</div> [cite: 194]
-                                <div class="text-xs text-gray-500">受験対策コース利用</div> [cite: 194]
-                            </div> [cite: 195]
-                        </div> [cite: 195]
-                    </div> [cite: 195]
-                </div> [cite: 195]
-                
-                <div class="text-center mt-8"> [cite: 196]
-                    <a href="#contact" class="btn-primary" data-aos="fade-up"> [cite: 196]
-                        <i class="fas fa-phone-alt mr-2"></i>保護者向け説明を受ける [cite: 196]
-                    </a> [cite: 196]
-                </div> [cite: 196]
-            </div> [cite: 197]
-        </div> [cite: 197]
-    </section> [cite: 197]
+            <div class="mt-16 text-center">
+                <p class="text-lg text-gray-700 mb-6" data-aos="fade-up">
+                    <strong>EduMind Harmonyの特徴</strong>：一人の教師による一貫した指導と、
+                    AIによる24時間メンタルサポートの組み合わせで、学習の継続性と精神的な安定を両立させます。
+                </p>
+                <a href="#tutor" class="btn-primary" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-arrow-right mr-2"></i>サービス詳細を見る
+                </a>
+            </div>
+        </div>
+    </section>
 
-    <section id="blog" class="section bg-gray-50"> [cite: 197]
-        <div class="container mx-auto px-4"> [cite: 197]
-            <div class="text-center mb-12"> [cite: 197]
-                <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">ブログ</h2> [cite: 197]
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100"> [cite: 197, 198]
-                    教育とメンタルケアに関する専門的な知見を共有します [cite: 198]
-                </p> [cite: 198]
-            </div> [cite: 198]
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12"> [cite: 198]
-                <div class="blog-card bg-white rounded-xl overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="100"> [cite: 198, 199]
-                    <div class="h-48 bg-indigo-100 overflow-hidden"> [cite: 199]
-                        <div class="w-full h-full flex items-center justify-center"> [cite: 199]
-                            <i class="fas fa-brain text-indigo-300 text-5xl"></i> [cite: 199]
-                        </div> [cite: 200]
-                    </div> [cite: 200]
-                    <div class="p-6"> [cite: 200]
-                        <div class="flex items-center mb-4"> [cite: 200]
-                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">メンタルケア</span> [cite: 201]
-                            <span class="text-gray-400 text-sm ml-auto">2023.09.15</span> [cite: 201]
-                        </div> [cite: 201]
-                        <h3 class="font-bold text-xl mb-3">AIが検出する学習中のストレスサインと対処法</h3> [cite: 201]
-                        <p class="text-gray-600 mb-4"> [cite: 202]
-                            学習中に現れる微細なストレスサインを早期に検出し、効果的な対処法を提供するAIアルゴリズムについて解説します。 [cite: 202]
-                        </p> [cite: 202]
-                        <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium flex items-center"> [cite: 202, 203]
-                            続きを読む <i class="fas fa-arrow-right ml-2"></i> [cite: 203]
-                        </a> [cite: 203]
-                    </div> [cite: 203]
-                </div> [cite: 203]
-                
-                <div class="blog-card bg-white rounded-xl overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="200"> [cite: 204]
-                    <div class="h-48 bg-green-100 overflow-hidden"> [cite: 204]
-                        <div class="w-full h-full flex items-center justify-center"> [cite: 204]
-                            <i class="fas fa-chart-line text-green-300 text-5xl"></i> [cite: 205]
-                        </div> [cite: 205]
-                    </div> [cite: 205]
-                    <div class="p-6"> [cite: 205]
-                        <div class="flex items-center mb-4"> [cite: 206]
-                            <span class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">金融教育</span> [cite: 206]
-                            <span class="text-gray-400 text-sm ml-auto">2023.08.28</span> [cite: 206]
-                        </div> [cite: 206]
-                        <h3 class="font-bold text-xl mb-3">投資教育を家庭教師に依頼するメリット</h3> [cite: 207]
-                        <p class="text-gray-600 mb-4"> [cite: 207]
-                            若いうちから金融リテラシーを身につけることの重要性と、家庭教師による実践的な投資教育のアプローチについて紹介します。 [cite: 207]
-                        </p> [cite: 208]
-                        <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium flex items-center"> [cite: 208]
-                            続きを読む <i class="fas fa-arrow-right ml-2"></i> [cite: 208]
-                        </a> [cite: 208]
-                    </div> [cite: 209]
-                </div> [cite: 209]
-                
-                <div class="blog-card bg-white rounded-xl overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="300"> [cite: 209]
-                    <div class="h-48 bg-yellow-100 overflow-hidden"> [cite: 209]
-                        <div class="w-full h-full flex items-center justify-center"> [cite: 210]
-                            <i class="fas fa-users text-yellow-300 text-5xl"></i> [cite: 210]
-                        </div> [cite: 210]
-                    </div> [cite: 210]
-                    <div class="p-6"> [cite: 211]
-                        <div class="flex items-center mb-4"> [cite: 211]
-                            <span class="bg-yellow-100 text-yellow-800 text-xs px-3 py-1 rounded-full">不登校支援</span> [cite: 211]
-                            <span class="text-gray-400 text-sm ml-auto">2023.07.10</span> [cite: 212]
-                        </div> [cite: 212]
-                        <h3 class="font-bold text-xl mb-3">保護者と共有する学習レポートの適切な範囲</h3> [cite: 212]
-                        <p class="text-gray-600 mb-4"> [cite: 212]
-                            不登校の生徒のプライバシーを尊重しながら、保護者が適切にサポートするためのレポート共有の在り方について考察します。 [cite: 213]
-                        </p> [cite: 213]
-                        <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium flex items-center"> [cite: 213]
-                            続きを読む <i class="fas fa-arrow-right ml-2"></i> [cite: 213]
-                        </a> [cite: 214]
-                    </div> [cite: 214]
-                </div> [cite: 214]
-            </div> [cite: 214]
-            
-            <div class="text-center"> [cite: 214]
-                <a href="#" class="btn-secondary" data-aos="fade-up"> [cite: 215]
-                    <i class="fas fa-book-open mr-2"></i>全ての記事を見る [cite: 215]
-                </a> [cite: 215]
-            </div> [cite: 215]
-        </div> [cite: 215]
-    </section> [cite: 215]
+    <section id="ai-chatbot" class="section bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">AIチャットボットによるメンタルケア</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    学習における心理的障壁を取り除き、継続的な成長をサポートする最新のAI技術を活用したメンタルケアシステム
+                </p>
+            </div>
 
-    <section class="section bg-white"> [cite: 215]
-        <div class="container mx-auto px-4"> [cite: 215]
-            <div class="text-center mb-12"> [cite: 216]
-                <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">よくある質問</h2> [cite: 216]
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100"> [cite: 216]
-                    サービスについてのご質問にお答えします [cite: 216]
-                </p> [cite: 216]
-            </div> [cite: 217]
-            
-            <div class="max-w-4xl mx-auto"> [cite: 217]
-                <div class="space-y-4" data-aos="fade-up"> [cite: 217]
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden"> [cite: 217]
-                        <div class="accordion-header p-5 flex justify-between items-center cursor-pointer"> [cite: 218]
-                            <h3 class="font-semibold text-lg">AIチャットボットは24時間利用できますか？</h3> [cite: 218]
-                            <i class="fas fa-chevron-down text-indigo-600 transition-transform"></i> [cite: 218]
-                        </div> [cite: 218]
-                        <div class="accordion-content"> [cite: 219]
-                            <div class="p-5 pt-0 text-gray-600 border-t border-gray-100"> [cite: 219]
-                                はい、AIチャットボットは24時間365日いつでもご利用いただけます。夜間や休日など、人間の教師が対応できない時間帯でも、学習やメンタル面のサポートを受けることが可能です。ただし、より専門的なアドバイスが必要な場合は、担当教師への質問として記録され、後日回答いたします。 [cite: 219]
-                            </div> [cite: 220]
-                        </div> [cite: 220]
-                    </div> [cite: 220]
-                    
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden"> [cite: 220]
-                        <div class="accordion-header p-5 flex justify-between items-center cursor-pointer"> [cite: 221]
-                            <h3 class="font-semibold text-lg">オンライン指導の対象年齢や地域は限られていますか？</h3> [cite: 221]
-                            <i class="fas fa-chevron-down text-indigo-600 transition-transform"></i> [cite: 221]
-                        </div> [cite: 222]
-                        <div class="accordion-content"> [cite: 222]
-                            <div class="p-5 pt-0 text-gray-600 border-t border-gray-100"> [cite: 222]
-                                オンライン指導は小学生から高校生までを対象としており、全国どこからでもご利用いただけます。インターネット環境さえあれば、地理的な制約なく質の高い教育を受けることが可能です。また、海外在住の方も対応可能ですので、お気軽にご相談ください。 [cite: 222]
-                            </div> [cite: 223]
-                        </div> [cite: 223]
-                    </div> [cite: 223]
-                    
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden"> [cite: 224]
-                        <div class="accordion-header p-5 flex justify-between items-center cursor-pointer"> [cite: 224]
-                            <h3 class="font-semibold text-lg">不登校の生徒でも対応可能ですか？</h3> [cite: 224]
-                            <i class="fas fa-chevron-down text-indigo-600 transition-transform"></i> [cite: 225]
-                        </div> [cite: 225]
-                        <div class="accordion-content"> [cite: 225]
-                            <div class="p-5 pt-0 text-gray-600 border-t border-gray-100"> [cite: 225]
-                                はい、不登校支援員としての経験を活かし、不登校の生徒さんに特化したサポートを提供しています。学習面のフォローだけでなく、メンタル面のケア、自己肯定感の回復、段階的な学校復帰のサポートなど、一人ひとりの状況に合わせた総合的な支援プログラムをご用意しています。まずは無理のないペースから始めましょう。 [cite: 226]
-                            </div> [cite: 226]
-                        </div> [cite: 226]
-                    </div> [cite: 226]
-                    
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden"> [cite: 227]
-                        <div class="accordion-header p-5 flex justify-between items-center cursor-pointer"> [cite: 227]
-                            <h3 class="font-semibold text-lg">AIチャットボットで共有した内容は保護者に見られますか？</h3> [cite: 227]
-                            <i class="fas fa-chevron-down text-indigo-600 transition-transform"></i> [cite: 228]
-                        </div> [cite: 228]
-                        <div class="accordion-content"> [cite: 228]
-                            <div class="p-5 pt-0 text-gray-600 border-t border-gray-100"> [cite: 229]
-                                生徒さんのプライバシーを尊重し、AIチャットでの個別の会話内容は基本的に保護者様には共有されません。ただし、学習進捗や全体的なメンタル状態の傾向などは、適切な範囲で保護者向けレポートに含まれることがあります。また、安全上の懸念がある内容については、生徒さんの同意を得た上で共有する場合があります。プライバシー設定はカスタマイズ可能ですので、ご家庭の方針に合わせて調整できます。 [cite: 229]
-                            </div> [cite: 229]
-                        </div> [cite: 230]
-                    </div> [cite: 230]
-                    
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden"> [cite: 230]
-                        <div class="accordion-header p-5 flex justify-between items-center cursor-pointer"> [cite: 230]
-                            <h3 class="font-semibold text-lg">料金体系はどうなっていますか？</h3> [cite: 231]
-                            <i class="fas fa-chevron-down text-indigo-600 transition-transform"></i> [cite: 231]
-                        </div> [cite: 231]
-                        <div class="accordion-content"> [cite: 231]
-                            <div class="p-5 pt-0 text-gray-600 border-t border-gray-100"> [cite: 232]
-                                料金は学年や指導内容、頻度によって異なります。基本的には月額制で、週1回〜3回の個別指導とAIチャットボットの24時間利用がセットになったプランをご用意しています。詳細な料金については、お問い合わせフォームよりご相談ください。初回無料体験授業も実施していますので、まずはサービスの質を体験していただけます。 [cite: 232]
-                            </div> [cite: 232]
-                        </div> [cite: 233]
-                    </div> [cite: 233]
-                </div> [cite: 233]
-            </div> [cite: 233]
-        </div> [cite: 233]
-    </section> [cite: 233]
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8" data-aos="fade-right">
+                    <div class="bg-white rounded-xl shadow-lg p-6 relative">
+                        <div class="absolute -top-3 -right-3 bg-indigo-600 text-white rounded-full w-12 h-12 flex items-center justify-center">
+                            <i class="fas fa-robot text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">メンタルケアアルゴリズム</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="bg-indigo-100 rounded-full p-2 mr-4 mt-1">
+                                    <i class="fas fa-brain text-indigo-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">感情分析エンジン</h4>
+                                    <p class="text-gray-600">文章から感情状態を分析し、適切なサポートメッセージを提供</p>
+                                </div>
+                            </div>
 
-    <section id="contact" class="section hero-gradient text-white"> [cite: 233]
-        <div class="container mx-auto px-4"> [cite: 234]
-            <div class="text-center mb-12"> [cite: 234]
-                <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">お問い合わせ</h2> [cite: 234]
-                <p class="text-xl opacity-80 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100"> [cite: 234]
-                    無料相談や体験授業のお申し込み、ご質問などお気軽にご連絡ください [cite: 234]
-                </p> [cite: 234]
-            </div> [cite: 235]
-            
-            <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-2xl overflow-hidden" data-aos="fade-up"> [cite: 235]
-                <div class="grid grid-cols-1 md:grid-cols-3"> [cite: 235]
-                    <div class="p-8 bg-indigo-700 text-white"> [cite: 235]
-                        <h3 class="text-2xl font-bold mb-6">お問い合わせ方法</h3> [cite: 236]
-                        
-                        <div class="space-y-6"> [cite: 236]
-                            <div class="flex items-start"> [cite: 236]
-                                <div class="bg-indigo-600 rounded-full p-3 mr-4"> [cite: 237]
-                                    <i class="fas fa-envelope text-white"></i> [cite: 237]
-                                </div> [cite: 237]
-                                <div> [cite: 238]
-                                    <h4 class="font-semibold text-lg">メール</h4> [cite: 238]
-                                    <p class="opacity-80">info@edumindharmony.com</p> [cite: 239]
-                                    <p class="text-xs opacity-60 mt-1">24時間以内に返信いたします</p> [cite: 239]
-                                </div> [cite: 239]
-                            </div> [cite: 239]
-                            
-                            <div class="flex items-start"> [cite: 240]
-                                <div class="bg-indigo-600 rounded-full p-3 mr-4"> [cite: 240]
-                                    <i class="fas fa-phone-alt text-white"></i> [cite: 241]
-                                </div> [cite: 241]
-                                <div> [cite: 241]
-                                    <h4 class="font-semibold text-lg">電話</h4> [cite: 242]
-                                    <p class="opacity-80">お問い合わせフォームからご予約</p> [cite: 242]
-                                    <p class="text-xs opacity-60 mt-1">ご希望の日時にお電話いたします</p> [cite: 243]
-                                </div> [cite: 243]
-                            </div> [cite: 243]
-                            
-                            <div class="flex items-start"> [cite: 244]
-                                <div class="bg-indigo-600 rounded-full p-3 mr-4"> [cite: 244]
-                                    <i class="fas fa-video text-white"></i> [cite: 245]
-                                </div> [cite: 245]
-                                <div> [cite: 245]
-                                    <h4 class="font-semibold text-lg">ビデオ面談</h4> [cite: 246]
-                                    <p class="opacity-80">無料オンライン相談</p> [cite: 246]
-                                    <p class="text-xs opacity-60 mt-1">30分間の無料相談をご予約いただけます</p> [cite: 246]
-                                </div> [cite: 247]
-                            </div> [cite: 247]
-                        </div> [cite: 247]
-                    </div> [cite: 247]
-                    
-                    <div class="p-8 col-span-2 text-gray-800"> [cite: 248]
-                        <h3 class="text-2xl font-bold mb-6">お問い合わせフォーム</h3> [cite: 248]
-                        
-                        <form action="#" method="POST" class="space-y-6"> [cite: 249]
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6"> [cite: 249]
-                                <div> [cite: 249]
-                                    <label for="name" class="block text-gray-700 font-medium mb-2">お名前</label> [cite: 250]
-                                    <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required> [cite: 250]
-                                </div> [cite: 250]
-                                
-                                <div> [cite: 251]
-                                    <label for="email" class="block text-gray-700 font-medium mb-2">メールアドレス</label> [cite: 251]
-                                    <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required> [cite: 252]
-                                </div> [cite: 252]
-                            </div> [cite: 253]
-                            
-                            <div> [cite: 253]
-                                <label for="subject" class="block text-gray-700 font-medium mb-2">お問い合わせ内容</label> [cite: 253]
-                                <select id="subject" name="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required> [cite: 254]
-                                    <option value="" selected disabled>選択してください</option> [cite: 254]
-                                    <option value="trial">無料体験授業の申し込み</option> [cite: 255]
-                                    <option value="consultation">無料相談の予約</option> [cite: 255]
-                                    <option value="question">サービスについての質問</option> [cite: 255]
-                                    <option value="other">その他</option> [cite: 256]
-                                </select> [cite: 256]
-                            </div> [cite: 256]
-                            
-                            <div> [cite: 257]
-                                <label for="message" class="block text-gray-700 font-medium mb-2">メッセージ</label> [cite: 257]
-                                <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required></textarea> [cite: 258]
-                            </div> [cite: 258]
-                            
-                            <div> [cite: 259]
-                                <label class="flex items-center"> [cite: 259]
-                                    <input type="checkbox" class="text-indigo-600 rounded" required> [cite: 259]
-                                    <span class="ml-2 text-sm text-gray-600">プライバシーポリシーに同意します</span> [cite: 260]
-                                </label> [cite: 260]
-                            </div> [cite: 260]
-                            
-                            <div> [cite: 261]
-                                <button type="submit" class="w-full bg-indigo-600 text-white py-3 rounded-lg hover:bg-indigo-700 transition duration-300 font-semibold"> [cite: 261]
-                                    送信する [cite: 262]
-                                </button> [cite: 262]
-                            </div> [cite: 262]
-                        </form> [cite: 263]
-                    </div> [cite: 263]
-                </div> [cite: 263]
-            </div> [cite: 263]
-        </div> [cite: 263]
-    </section> [cite: 263]
+                            <div class="flex items-start">
+                                <div class="bg-indigo-100 rounded-full p-2 mr-4 mt-1">
+                                    <i class="fas fa-chart-bar text-indigo-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">学習パターン認識</h4>
+                                    <p class="text-gray-600">学習行動と感情状態の相関を分析し、最適な学習タイミングを提案</p>
+                                </div>
+                            </div>
 
-    <footer class="bg-gray-900 text-white py-12"> [cite: 263]
-        <div class="container mx-auto px-4"> [cite: 263]
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8"> [cite: 264]
-                <div> [cite: 264]
-                    <h3 class="text-xl font-bold mb-4">EduMind Harmony</h3> [cite: 264]
-                    <p class="text-gray-400"> [cite: 264]
-                        教育とメンタルケアの調和がもたらす、新しい学びのかたち。一人ひとりに寄り添った個別指導で可能性を最大化します。 [cite: 264]
-                    </p> [cite: 265]
-                    <div class="mt-4 flex space-x-3"> [cite: 265]
-                        <a href="#" class="text-gray-400 hover:text-white transition"> [cite: 265]
-                            <i class="fab fa-twitter"></i> [cite: 265]
-                        </a> [cite: 266]
-                        <a href="#" class="text-gray-400 hover:text-white transition"> [cite: 266]
-                            <i class="fab fa-instagram"></i> [cite: 266]
-                        </a> [cite: 266]
-                        <a href="#" class="text-gray-400 hover:text-white transition"> [cite: 267]
-                            <i class="fab fa-youtube"></i> [cite: 267]
-                        </a> [cite: 267]
-                        <a href="#" class="text-gray-400 hover:text-white transition"> [cite: 268]
-                            <i class="fab fa-facebook"></i> [cite: 268]
-                        </a> [cite: 268]
-                    </div> [cite: 268]
-                </div> [cite: 268]
-                
-                <div> [cite: 269]
-                    <h3 class="text-lg font-semibold mb-4">サービス</h3> [cite: 269]
-                    <ul class="space-y-2 text-gray-400"> [cite: 269]
-                        <li><a href="#ai-chatbot" class="hover:text-white transition">AIチャットボット</a></li> [cite: 269]
-                        <li><a href="#tutor" class="hover:text-white transition">オンライン個別指導</a></li> [cite: 270]
-                        <li><a href="#" class="hover:text-white transition">不登校支援プログラム</a></li> [cite: 270]
-                        <li><a href="#" class="hover:text-white transition">金融教育</a></li> [cite: 270]
-                        <li><a href="#" class="hover:text-white transition">データ分析入門</a></li> [cite: 271]
-                    </ul> [cite: 271]
-                </div> [cite: 271]
-                
-                <div> [cite: 271]
-                    <h3 class="text-lg font-semibold mb-4">リンク</h3> [cite: 271]
-                    <ul class="space-y-2 text-gray-400"> [cite: 272]
-                        <li><a href="#about" class="hover:text-white transition">サービス紹介</a></li> [cite: 272]
-                        <li><a href="#profile" class="hover:text-white transition">講師紹介</a></li> [cite: 272]
-                        <li><a href="#blog" class="hover:text-white transition">ブログ</a></li> [cite: 273]
-                        <li><a href="#contact" class="hover:text-white transition">お問い合わせ</a></li> [cite: 273]
-                        <li><a href="#" class="hover:text-white transition">プライバシーポリシー</a></li> [cite: 273]
-                    </ul> [cite: 273]
-                </div> [cite: 273]
-                
-                <div> [cite: 274]
-                    <h3 class="text-lg font-semibold mb-4">お問い合わせ</h3> [cite: 274]
-                    <ul class="space-y-3 text-gray-400"> [cite: 274]
-                        <li class="flex items-start"> [cite: 274]
-                            <i class="fas fa-envelope mt-1.5 mr-3 text-indigo-400"></i> [cite: 275]
-                            <span>info@edumindharmony.com</span> [cite: 275]
-                        </li> [cite: 275]
-                        <li class="flex items-start"> [cite: 276]
-                            <i class="fas fa-clock mt-1.5 mr-3 text-indigo-400"></i> [cite: 276]
-                            <span>対応時間: 平日 10:00-20:00</span> [cite: 276]
-                        </li> [cite: 276]
-                    </ul> [cite: 277]
-                    <div class="mt-6"> [cite: 277]
-                        <a href="#contact" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg transition"> [cite: 277]
-                            お問い合わせはこちら [cite: 277]
-                        </a> [cite: 278]
-                    </div> [cite: 278]
-                </div> [cite: 278]
-            </div> [cite: 278]
-            
-            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500"> [cite: 278]
-                <p>&copy; 2023 EduMind Harmony. All rights reserved.</p> [cite: 279, 280]
-            </div> [cite: 280]
-        </div> [cite: 280]
-    </footer> [cite: 280]
+                            <div class="flex items-start">
+                                <div class="bg-indigo-100 rounded-full p-2 mr-4 mt-1">
+                                    <i class="fas fa-shield-alt text-indigo-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">安全対策プロセス</h4>
+                                    <p class="text-gray-600">プライバシー保護とデータセキュリティを最優先した設計</p>
+                                </div>
+                            </div>
 
-    </body>
+                            <div class="flex items-start">
+                                <div class="bg-indigo-100 rounded-full p-2 mr-4 mt-1">
+                                    <i class="fas fa-sync-alt text-indigo-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">継続的学習システム</h4>
+                                    <p class="text-gray-600">ユーザーとの対話から常に学習し、サポートの質を向上</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:w-1/2" data-aos="fade-left" data-aos-delay="100">
+                    <h3 class="text-2xl font-bold mb-6">こんな場面で活躍します</h3>
+
+                    <div class="space-y-6">
+                        <div class="bg-white p-4 rounded-lg shadow-md">
+                            <div class="flex items-center mb-3">
+                                <div class="bg-yellow-100 p-2 rounded-full">
+                                    <i class="fas fa-exclamation-circle text-yellow-500"></i>
+                                </div>
+                                <h4 class="font-semibold ml-3">テスト前の不安軽減</h4>
+                            </div>
+                            <p class="text-gray-600">
+                                テスト前の緊張や不安を和らげるリラクゼーションテクニックやポジティブな思考法を提案します。
+                            </p>
+                        </div>
+
+                        <div class="bg-white p-4 rounded-lg shadow-md">
+                            <div class="flex items-center mb-3">
+                                <div class="bg-green-100 p-2 rounded-full">
+                                    <i class="fas fa-clock text-green-500"></i>
+                                </div>
+                                <h4 class="font-semibold ml-3">モチベーション低下時のサポート</h4>
+                            </div>
+                            <p class="text-gray-600">
+                                やる気が出ないときに、個人の興味や目標に合わせた動機付けメッセージを提供します。
+                            </p>
+                        </div>
+
+                        <div class="bg-white p-4 rounded-lg shadow-md">
+                            <div class="flex items-center mb-3">
+                                <div class="bg-red-100 p-2 rounded-full">
+                                    <i class="fas fa-heart-broken text-red-500"></i>
+                                </div>
+                                <h4 class="font-semibold ml-3">挫折感への対応</h4>
+                            </div>
+                            <p class="text-gray-600">
+                                難しい問題で挫折を感じたときに、具体的なステップに分解して取り組む方法を提案します。
+                            </p>
+                        </div>
+
+                        <div class="bg-white p-4 rounded-lg shadow-md">
+                            <div class="flex items-center mb-3">
+                                <div class="bg-blue-100 p-2 rounded-full">
+                                    <i class="fas fa-moon text-blue-500"></i>
+                                </div>
+                                <h4 class="font-semibold ml-3">24時間の心の相談相手</h4>
+                            </div>
+                            <p class="text-gray-600">
+                                夜遅くなど、誰にも相談できない時間帯でも、常に話を聞き、共感的に応答します。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center">
+                <a href="#contact" class="btn-primary" data-aos="fade-up">
+                    <i class="fas fa-robot mr-2"></i>AIチャットボットを試してみる
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="tutor" class="section bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">オンライン個別指導</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    一人ひとりの学習スタイルと目標に合わせた、きめ細やかな個別指導
+                </p>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center mb-16">
+                <div class="md:w-1/2 md:pr-8 mb-8 md:mb-0" data-aos="fade-right">
+                    <h3 class="text-2xl font-bold mb-4">指導科目一覧</h3>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-white rounded-lg shadow p-4 border-l-4 border-indigo-600">
+                            <h4 class="font-semibold mb-2">小学生</h4>
+                            <ul class="text-gray-600 space-y-1">
+                                <li><i class="fas fa-check text-indigo-600 mr-2"></i>国語・算数</li>
+                                <li><i class="fas fa-check text-indigo-600 mr-2"></i>理科・社会</li>
+                                <li><i class="fas fa-check text-indigo-600 mr-2"></i>英語・プログラミング</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white rounded-lg shadow p-4 border-l-4 border-indigo-600">
+                            <h4 class="font-semibold mb-2">中学生</h4>
+                            <ul class="text-gray-600 space-y-1">
+                                <li><i class="fas fa-check text-indigo-600 mr-2"></i>数学・英語</li>
+                                <li><i class="fas fa-check text-indigo-600 mr-2"></i>国語・理科・社会</li>
+                                <li><i class="fas fa-check text-indigo-600 mr-2"></i>高校受験対策</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white rounded-lg shadow p-4 border-l-4 border-indigo-600">
+                            <h4 class="font-semibold mb-2">高校生</h4>
+                            <ul class="text-gray-600 space-y-1">
+                                <li><i class="fas fa-check text-indigo-600 mr-2"></i>数学I・II・III・A・B</li>
+                                <li><i class="fas fa-check text-indigo-600 mr-2"></i>英語・現代文・古典</li>
+                                <li><i class="fas fa-check text-indigo-600 mr-2"></i>物理・化学・生物・地学</li>
+                                <li><i class="fas fa-check text-indigo-600 mr-2"></i>大学受験対策</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white rounded-lg shadow p-4 border-l-4 border-indigo-600">
+                            <h4 class="font-semibold mb-2">特別コース</h4>
+                            <ul class="text-gray-600 space-y-1">
+                                <li><i class="fas fa-check text-indigo-600 mr-2"></i>不登校支援プログラム</li>
+                                <li><i class="fas fa-check text-indigo-600 mr-2"></i>金融・投資教育</li>
+                                <li><i class="fas fa-check text-indigo-600 mr-2"></i>データ分析入門</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:w-1/2" data-aos="fade-left" data-aos-delay="100">
+                    <h3 class="text-2xl font-bold mb-4">特徴的なカリキュラム設計</h3>
+
+                    <div class="space-y-6">
+                        <div class="bg-gradient-to-r from-indigo-50 to-purple-50 p-5 rounded-lg">
+                            <h4 class="font-semibold text-lg mb-2">メンタル×学習の統合アプローチ</h4>
+                            <p class="text-gray-700">
+                                学習内容だけでなく、学びへの姿勢や心理状態も含めた総合的な成長を促す独自カリキュラム
+                            </p>
+                        </div>
+
+                        <div class="bg-gradient-to-r from-indigo-50 to-purple-50 p-5 rounded-lg">
+                            <h4 class="font-semibold text-lg mb-2">実社会とつながる学び</h4>
+                            <p class="text-gray-700">
+                                投資教育やデータ分析など、将来役立つ実践的スキルを教科学習と関連付けて指導
+                            </p>
+                        </div>
+
+                        <div class="bg-gradient-to-r from-indigo-50 to-purple-50 p-5 rounded-lg">
+                            <h4 class="font-semibold text-lg mb-2">不登校経験からの回復プログラム</h4>
+                            <p class="text-gray-700">
+                                不登校支援員としての経験を活かし、学校復帰や自己肯定感回復への段階的なアプローチ
+                            </p>
+                        </div>
+
+                        <div class="bg-gradient-to-r from-indigo-50 to-purple-50 p-5 rounded-lg">
+                            <h4 class="font-semibold text-lg mb-2">個別進度調整システム</h4>
+                            <p class="text-gray-700">
+                                一人の講師が一貫して担当するからこそ実現する、日々の状態に合わせた柔軟な進度調整
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 bg-indigo-50 p-6 rounded-xl shadow-md" data-aos="fade-up">
+                <h3 class="text-2xl font-bold mb-4 text-center">指導スタイル</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="text-center">
+                        <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow">
+                            <i class="fas fa-video text-2xl text-indigo-600"></i>
+                        </div>
+                        <h4 class="font-semibold mb-2">ビデオ通話指導</h4>
+                        <p class="text-gray-600">Zoomを使用した双方向コミュニケーション</p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow">
+                            <i class="fas fa-edit text-2xl text-indigo-600"></i>
+                        </div>
+                        <h4 class="font-semibold mb-2">デジタル教材</h4>
+                        <p class="text-gray-600">タブレットで共有できる独自開発教材</p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow">
+                            <i class="fas fa-calendar-alt text-2xl text-indigo-600"></i>
+                        </div>
+                        <h4 class="font-semibold mb-2">柔軟なスケジュール</h4>
+                        <p class="text-gray-600">生徒の状況に合わせた時間設定</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="profile" class="section bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">講師紹介</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    教育とメンタルケアのプロフェッショナルとして、一人ひとりの可能性を最大限に引き出します
+                </p>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-8 md:mb-0" data-aos="fade-right">
+                    <div class="bg-white rounded-xl shadow-lg p-6 relative">
+                        <div class="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden shadow-lg border-4 border-indigo-100">
+                            <div class="w-full h-full bg-gradient-to-br from-indigo-400 to-purple-500 flex items-center justify-center">
+                                <i class="fas fa-user-graduate text-white text-5xl"></i>
+                            </div>
+                        </div>
+
+                        <h3 class="text-2xl font-bold mb-2 text-center">EduMind講師</h3>
+                        <div class="text-center text-gray-600 mb-4">
+                            <span class="bg-indigo-100 text-indigo-800 text-sm rounded-full px-3 py-1">教育とメンタルケアのスペシャリスト</span>
+                        </div>
+
+                        <div class="space-y-3 text-center">
+                            <div>
+                                <a href="#contact" class="inline-block bg-indigo-600 text-white rounded-full px-6 py-2 transition hover:bg-indigo-700">
+                                    <i class="fas fa-envelope mr-2"></i>お問い合わせ
+                                </a>
+                            </div>
+                            <p class="text-gray-500 text-sm">
+                                <i class="fas fa-clock mr-1"></i>24時間以内にご返信します
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:w-2/3 md:pl-12" data-aos="fade-left" data-aos-delay="100">
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h3 class="text-2xl font-bold mb-4">資格・経歴</h3>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                            <div class="flex items-center">
+                                <div class="bg-indigo-100 p-3 rounded-full mr-3">
+                                    <i class="fas fa-graduation-cap text-indigo-600"></i>
+                                </div>
+                                <span>小学校・中学校・高等学校教諭一種免許</span>
+                            </div>
+
+                            <div class="flex items-center">
+                                <div class="bg-green-100 p-3 rounded-full mr-3">
+                                    <i class="fas fa-chart-pie text-green-600"></i>
+                                </div>
+                                <span>ファイナンシャルプランナー</span>
+                            </div>
+
+                            <div class="flex items-center">
+                                <div class="bg-blue-100 p-3 rounded-full mr-3">
+                                    <i class="fas fa-coins text-blue-600"></i>
+                                </div>
+                                <span>資産運用検定2級</span>
+                            </div>
+
+                            <div class="flex items-center">
+                                <div class="bg-purple-100 p-3 rounded-full mr-3">
+                                    <i class="fas fa-database text-purple-600"></i>
+                                </div>
+                                <span>データアナリスト</span>
+                            </div>
+
+                            <div class="flex items-center">
+                                <div class="bg-yellow-100 p-3 rounded-full mr-3">
+                                    <i class="fas fa-hands-helping text-yellow-600"></i>
+                                </div>
+                                <span>元不登校支援員</span>
+                            </div>
+                        </div>
+
+                        <h4 class="font-bold text-lg mb-3">指導実績</h4>
+                        <div class="bg-gray-50 p-4 rounded-lg mb-6">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-users text-indigo-600 mr-2"></i>
+                                <span class="font-semibold">200人以上</span>の生徒を指導
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-school text-indigo-600 mr-2"></i>
+                                <span>旧帝大、早稲田大学、MARCH等</span>の合格実績
+                            </div>
+                        </div>
+
+                        <h4 class="font-bold text-lg mb-3">趣味・特技</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full text-sm">
+                                <i class="fas fa-basketball-ball mr-1"></i>バスケ
+                            </span>
+                            <span class="bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full text-sm">
+                                <i class="fas fa-volleyball-ball mr-1"></i>バレー
+                            </span>
+                            <span class="bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full text-sm">
+                                <i class="fas fa-table-tennis mr-1"></i>バドミントン
+                            </span>
+                            <span class="bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full text-sm">
+                                <i class="fas fa-utensils mr-1"></i>料理
+                            </span>
+                            <span class="bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full text-sm">
+                                <i class="fas fa-microphone mr-1"></i>カラオケ
+                            </span>
+                            <span class="bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full text-sm">
+                                <i class="fas fa-chess-board mr-1"></i>囲碁
+                            </span>
+                        </div>
+
+                        <div class="mt-6">
+                            <h4 class="font-bold text-lg mb-3">メッセージ</h4>
+                            <blockquote class="border-l-4 border-indigo-500 pl-4 italic text-gray-600">
+                                私の経験と専門知識を活かし、学習面だけでなく精神的な支えとしても皆さんの成長をサポートします。
+                                一人ひとりに合った学び方と向き合い方を一緒に見つけていきましょう。
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">保護者向け機能</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    お子様の学習状況を見守りながら、成長をサポートするための機能
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card bg-white p-6 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon mx-auto">
+                        <i class="fas fa-chart-bar text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-center">詳細な学習レポート</h3>
+                    <p class="text-gray-600 mb-4">
+                        週次・月次の学習状況、理解度、課題点などを視覚的にまとめたレポートを提供します。
+                    </p>
+                    <div class="bg-indigo-50 p-3 rounded-lg">
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-chart-line text-indigo-600 mr-2"></i>
+                            <span class="font-semibold">レポート例：</span>
+                        </div>
+                        <ul class="text-sm text-gray-700 space-y-1">
+                            <li>• 学習時間の推移グラフ</li>
+                            <li>• 科目別理解度評価</li>
+                            <li>• 課題解決力の変化</li>
+                            <li>• 次月の学習目標提案</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card bg-white p-6 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon mx-auto">
+                        <i class="fas fa-shield-alt text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-center">プライバシー保護</h3>
+                    <p class="text-gray-600 mb-4">
+                        お子様の自律性を尊重しながら、適切な情報共有を実現する細やかな設定が可能です。
+                    </p>
+                    <div class="bg-indigo-50 p-3 rounded-lg">
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-user-shield text-indigo-600 mr-2"></i>
+                            <span class="font-semibold">カスタマイズ可能な設定：</span>
+                        </div>
+                        <ul class="text-sm text-gray-700 space-y-1">
+                            <li>• 共有情報の範囲設定</li>
+                            <li>• メンタル関連情報の共有レベル</li>
+                            <li>• 通知頻度のカスタマイズ</li>
+                            <li>• データ保護・匿名化オプション</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card bg-white p-6 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon mx-auto">
+                        <i class="fas fa-comments text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-center">定期的なコンサルテーション</h3>
+                    <p class="text-gray-600 mb-4">
+                        教師との直接面談で学習方針やご家庭でのサポート方法について相談できます。
+                    </p>
+                    <div class="bg-indigo-50 p-3 rounded-lg">
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-calendar-check text-indigo-600 mr-2"></i>
+                            <span class="font-semibold">コンサルテーション内容：</span>
+                        </div>
+                        <ul class="text-sm text-gray-700 space-y-1">
+                            <li>• 学習進捗の詳細説明</li>
+                            <li>• 家庭でのサポート方法提案</li>
+                            <li>• 目標設定の共同作成</li>
+                            <li>• 質問・相談への回答</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 bg-indigo-50 rounded-xl p-8 shadow-md" data-aos="fade-up">
+                <h3 class="text-2xl font-bold mb-6 text-center">保護者の声</h3>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white p-5 rounded-lg shadow relative">
+                        <div class="absolute -top-4 -left-4 bg-indigo-600 text-white rounded-full w-8 h-8 flex items-center justify-center">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="italic text-gray-600 mb-4">
+                            不登校だった息子が、AIチャットとの対話を重ねるうちに少しずつ自分の気持ちを言語化できるようになりました。
+                            定期的な学習レポートで成長を実感できることが、親子のポジティブな会話につながっています。
+                        </p>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center mr-3">
+                                <i class="fas fa-user text-indigo-600"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold">中学2年生の保護者様</div>
+                                <div class="text-xs text-gray-500">不登校サポート利用</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-lg shadow relative">
+                        <div class="absolute -top-4 -left-4 bg-indigo-600 text-white rounded-full w-8 h-8 flex items-center justify-center">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="italic text-gray-600 mb-4">
+                            テスト前のプレッシャーで娘が悩んでいるときに、AIメンタルケアが大きな支えになっています。
+                            学習だけでなく、メンタル面も含めたトータルサポートが本当に心強いです。
+                        </p>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center mr-3">
+                                <i class="fas fa-user text-indigo-600"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold">高校1年生の保護者様</div>
+                                <div class="text-xs text-gray-500">受験対策コース利用</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-8">
+                    <a href="#contact" class="btn-primary" data-aos="fade-up">
+                        <i class="fas fa-phone-alt mr-2"></i>保護者向け説明を受ける
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="section bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">ブログ</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    教育とメンタルケアに関する専門的な知見を共有します
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <div class="blog-card bg-white rounded-xl overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-48 bg-indigo-100 overflow-hidden">
+                        <div class="w-full h-full flex items-center justify-center">
+                            <i class="fas fa-brain text-indigo-300 text-5xl"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">メンタルケア</span>
+                            <span class="text-gray-400 text-sm ml-auto">2023.09.15</span>
+                        </div>
+                        <h3 class="font-bold text-xl mb-3">AIが検出する学習中のストレスサインと対処法</h3>
+                        <p class="text-gray-600 mb-4">
+                            学習中に現れる微細なストレスサインを早期に検出し、効果的な対処法を提供するAIアルゴリズムについて解説します。
+                        </p>
+                        <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium flex items-center">
+                            続きを読む <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="blog-card bg-white rounded-xl overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-48 bg-green-100 overflow-hidden">
+                        <div class="w-full h-full flex items-center justify-center">
+                            <i class="fas fa-chart-line text-green-300 text-5xl"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <span class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">金融教育</span>
+                            <span class="text-gray-400 text-sm ml-auto">2023.08.28</span>
+                        </div>
+                        <h3 class="font-bold text-xl mb-3">投資教育を家庭教師に依頼するメリット</h3>
+                        <p class="text-gray-600 mb-4">
+                            若いうちから金融リテラシーを身につけることの重要性と、家庭教師による実践的な投資教育のアプローチについて紹介します。
+                        </p>
+                        <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium flex items-center">
+                            続きを読む <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="blog-card bg-white rounded-xl overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                    <div class="h-48 bg-yellow-100 overflow-hidden">
+                        <div class="w-full h-full flex items-center justify-center">
+                            <i class="fas fa-users text-yellow-300 text-5xl"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <span class="bg-yellow-100 text-yellow-800 text-xs px-3 py-1 rounded-full">不登校支援</span>
+                            <span class="text-gray-400 text-sm ml-auto">2023.07.10</span>
+                        </div>
+                        <h3 class="font-bold text-xl mb-3">保護者と共有する学習レポートの適切な範囲</h3>
+                        <p class="text-gray-600 mb-4">
+                            不登校の生徒のプライバシーを尊重しながら、保護者が適切にサポートするためのレポート共有の在り方について考察します。
+                        </p>
+                        <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium flex items-center">
+                            続きを読む <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="#" class="btn-secondary" data-aos="fade-up">
+                    <i class="fas fa-book-open mr-2"></i>全ての記事を見る
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">よくある質問</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    サービスについてのご質問にお答えします
+                </p>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="space-y-4" data-aos="fade-up">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="accordion-header p-5 flex justify-between items-center cursor-pointer">
+                            <h3 class="font-semibold text-lg">AIチャットボットは24時間利用できますか？</h3>
+                            <i class="fas fa-chevron-down text-indigo-600 transition-transform"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="p-5 pt-0 text-gray-600 border-t border-gray-100">
+                                はい、AIチャットボットは24時間365日いつでもご利用いただけます。夜間や休日など、人間の教師が対応できない時間帯でも、学習やメンタル面のサポートを受けることが可能です。ただし、より専門的なアドバイスが必要な場合は、担当教師への質問として記録され、後日回答いたします。
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="accordion-header p-5 flex justify-between items-center cursor-pointer">
+                            <h3 class="font-semibold text-lg">オンライン指導の対象年齢や地域は限られていますか？</h3>
+                            <i class="fas fa-chevron-down text-indigo-600 transition-transform"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="p-5 pt-0 text-gray-600 border-t border-gray-100">
+                                オンライン指導は小学生から高校生までを対象としており、全国どこからでもご利用いただけます。インターネット環境さえあれば、地理的な制約なく質の高い教育を受けることが可能です。また、海外在住の方も対応可能ですので、お気軽にご相談ください。
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="accordion-header p-5 flex justify-between items-center cursor-pointer">
+                            <h3 class="font-semibold text-lg">不登校の生徒でも対応可能ですか？</h3>
+                            <i class="fas fa-chevron-down text-indigo-600 transition-transform"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="p-5 pt-0 text-gray-600 border-t border-gray-100">
+                                はい、不登校支援員としての経験を活かし、不登校の生徒さんに特化したサポートを提供しています。学習面のフォローだけでなく、メンタル面のケア、自己肯定感の回復、段階的な学校復帰のサポートなど、一人ひとりの状況に合わせた総合的な支援プログラムをご用意しています。まずは無理のないペースから始めましょう。
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="accordion-header p-5 flex justify-between items-center cursor-pointer">
+                            <h3 class="font-semibold text-lg">AIチャットボットで共有した内容は保護者に見られますか？</h3>
+                            <i class="fas fa-chevron-down text-indigo-600 transition-transform"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="p-5 pt-0 text-gray-600 border-t border-gray-100">
+                                生徒さんのプライバシーを尊重し、AIチャットでの個別の会話内容は基本的に保護者様には共有されません。ただし、学習進捗や全体的なメンタル状態の傾向などは、適切な範囲で保護者向けレポートに含まれることがあります。また、安全上の懸念がある内容については、生徒さんの同意を得た上で共有する場合があります。プライバシー設定はカスタマイズ可能ですので、ご家庭の方針に合わせて調整できます。
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="accordion-header p-5 flex justify-between items-center cursor-pointer">
+                            <h3 class="font-semibold text-lg">料金体系はどうなっていますか？</h3>
+                            <i class="fas fa-chevron-down text-indigo-600 transition-transform"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="p-5 pt-0 text-gray-600 border-t border-gray-100">
+                                料金は学年や指導内容、頻度によって異なります。基本的には月額制で、週1回〜3回の個別指導とAIチャットボットの24時間利用がセットになったプランをご用意しています。詳細な料金については、お問い合わせフォームよりご相談ください。初回無料体験授業も実施していますので、まずはサービスの質を体験していただけます。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section hero-gradient text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">お問い合わせ</h2>
+                <p class="text-xl opacity-80 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    無料相談や体験授業のお申し込み、ご質問などお気軽にご連絡ください
+                </p>
+            </div>
+
+            <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-2xl overflow-hidden" data-aos="fade-up">
+                <div class="grid grid-cols-1 md:grid-cols-3">
+                    <div class="p-8 bg-indigo-700 text-white">
+                        <h3 class="text-2xl font-bold mb-6">お問い合わせ方法</h3>
+
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-indigo-600 rounded-full p-3 mr-4">
+                                    <i class="fas fa-envelope text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-lg">メール</h4>
+                                    <p class="opacity-80">info@edumindharmony.com</p>
+                                    <p class="text-xs opacity-60 mt-1">24時間以内に返信いたします</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="bg-indigo-600 rounded-full p-3 mr-4">
+                                    <i class="fas fa-phone-alt text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-lg">電話</h4>
+                                    <p class="opacity-80">お問い合わせフォームからご予約</p>
+                                    <p class="text-xs opacity-60 mt-1">ご希望の日時にお電話いたします</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="bg-indigo-600 rounded-full p-3 mr-4">
+                                    <i class="fas fa-video text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-lg">ビデオ面談</h4>
+                                    <p class="opacity-80">無料オンライン相談</p>
+                                    <p class="text-xs opacity-60 mt-1">30分間の無料相談をご予約いただけます</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-8 col-span-2 text-gray-800">
+                        <h3 class="text-2xl font-bold mb-6">お問い合わせフォーム</h3>
+
+                        <form action="#" method="POST" class="space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="name" class="block text-gray-700 font-medium mb-2">お名前</label>
+                                    <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
+                                </div>
+
+                                <div>
+                                    <label for="email" class="block text-gray-700 font-medium mb-2">メールアドレス</label>
+                                    <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="subject" class="block text-gray-700 font-medium mb-2">お問い合わせ内容</label>
+                                <select id="subject" name="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
+                                    <option value="" selected disabled>選択してください</option>
+                                    <option value="trial">無料体験授業の申し込み</option>
+                                    <option value="consultation">無料相談の予約</option>
+                                    <option value="question">サービスについての質問</option>
+                                    <option value="other">その他</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="message" class="block text-gray-700 font-medium mb-2">メッセージ</label>
+                                <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required></textarea>
+                            </div>
+
+                            <div>
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="text-indigo-600 rounded" required>
+                                    <span class="ml-2 text-sm text-gray-600">プライバシーポリシーに同意します</span>
+                                </label>
+                            </div>
+
+                            <div>
+                                <button type="submit" class="w-full bg-indigo-600 text-white py-3 rounded-lg hover:bg-indigo-700 transition duration-300 font-semibold">
+                                    送信する
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">EduMind Harmony</h3>
+                    <p class="text-gray-400">
+                        教育とメンタルケアの調和がもたらす、新しい学びのかたち。一人ひとりに寄り添った個別指導で可能性を最大化します。
+                    </p>
+                    <div class="mt-4 flex space-x-3">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">サービス</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#ai-chatbot" class="hover:text-white transition">AIチャットボット</a></li>
+                        <li><a href="#tutor" class="hover:text-white transition">オンライン個別指導</a></li>
+                        <li><a href="#" class="hover:text-white transition">不登校支援プログラム</a></li>
+                        <li><a href="#" class="hover:text-white transition">金融教育</a></li>
+                        <li><a href="#" class="hover:text-white transition">データ分析入門</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">リンク</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#about" class="hover:text-white transition">サービス紹介</a></li>
+                        <li><a href="#profile" class="hover:text-white transition">講師紹介</a></li>
+                        <li><a href="#blog" class="hover:text-white transition">ブログ</a></li>
+                        <li><a href="#contact" class="hover:text-white transition">お問い合わせ</a></li>
+                        <li><a href="#" class="hover:text-white transition">プライバシーポリシー</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">お問い合わせ</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1.5 mr-3 text-indigo-400"></i>
+                            <span>info@edumindharmony.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-clock mt-1.5 mr-3 text-indigo-400"></i>
+                            <span>対応時間: 平日 10:00-20:00</span>
+                        </li>
+                    </ul>
+                    <div class="mt-6">
+                        <a href="#contact" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg transition">
+                            お問い合わせはこちら
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500">
+                <p>&copy; 2023 EduMind Harmony. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
 </html>
