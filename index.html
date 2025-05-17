@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduMind Harmony | オンライン家庭教師サービス</title>
+    <meta name="description" content="不登校生徒向けのオンライン家庭教師サービス。質の高い個別指導とAIメンタルケアで学習をサポートします。全国対応、無料体験授業実施中。">
+    <meta name="keywords" content="オンライン家庭教師, 不登校支援, AI学習サポート, オンライン学習, 個別指導">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://edumind-harmony.jp/online-teacher">
+    <meta property="og:title" content="EduMind Harmony | オンライン家庭教師サービス">
+    <meta property="og:description" content="不登校生徒向けのオンライン家庭教師サービス。質の高い個別指導とAIメンタルケアで学習をサポートします。全国対応、無料体験授業実施中。">
+    <meta property="og:image" content="https://edumind-harmony.jp/images/og-image.jpg">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://edumind-harmony.jp/online-teacher">
+    <meta property="twitter:title" content="EduMind Harmony | オンライン家庭教師サービス">
+    <meta property="twitter:description" content="不登校生徒向けのオンライン家庭教師サービス。質の高い個別指導とAIメンタルケアで学習をサポートします。全国対応、無料体験授業実施中。">
+    <meta property="twitter:image" content="https://edumind-harmony.jp/images/og-image.jpg">
+
+    <link rel="icon" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/svgs/solid/graduation-cap.svg" type="image/svg+xml">
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "EduMind Harmony",
+      "description": "不登校生徒向けのオンライン家庭教師サービス。質の高い個別指導とAIメンタルケアで学習をサポートします。",
+      "url": "https://edumind-harmony.jp",
+      "logo": "https://edumind-harmony.jp/images/logo.jpg",
+      "sameAs": [
+        "https://www.facebook.com/edumindharmony/",
+        "https://twitter.com/edumindharmony",
+        "https://www.instagram.com/edumindharmony/"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "東京都",
+        "addressRegion": "渋谷区",
+        "postalCode": "150-0001",
+        "streetAddress": "渋谷1-1-1"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+81-3-1234-5678",
+        "contactType": "customer service"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "15000",
+        "priceCurrency": "JPY",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+    </script>
+</head>
+<body>
+    <nav class="navbar sticky top-0 z-50 shadow-sm">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <a href="/" class="flex items-center">
+                        <i class="fas fa-graduation-cap text-primary text-2xl mr-2"></i>
+                        <span class="text-xl font-bold text-primary">EduMind Harmony</span>
+                    </a>
+                </div>
+
+                <div class="hidden md:flex space-x-8">
+                    <a href="/" class="text-gray-600 hover:text-primary transition-colors">ホーム</a>
+                    <a href="/ai-mentalcare" class="text-gray-600 hover:text-primary transition-colors">AIメンタルケア</a>
+                    <a href="/online-teacher" class="text-primary font-medium">オンライン家庭教師</a>
+                    <a href="/for-parents" class="text-gray-600 hover:text-primary transition-colors">保護者の方へ</a>
+                    <a href="/blog" class="text-gray-600 hover:text-primary transition-colors">ブログ</a>
+                </div>
+
+                <div class="hidden md:block">
+                    <a href="#free-trial" class="btn-primary">無料体験申込</a>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-500 hover:text-primary focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg rounded-b-lg absolute w-full">
+            <div class="container mx-auto px-4 py-3 space-y-4">
+                <a href="/" class="block text-gray-600 hover:text-primary transition-colors">ホーム</a>
+                <a href="/ai-mentalcare" class="block text-gray-600 hover:text-primary transition-colors">AIメンタルケア</a>
+                <a href="/online-teacher" class="block text-primary font-medium">オンライン家庭教師</a>
+                <a href="/for-parents" class="block text-gray-600 hover:text-primary transition-colors">保護者の方へ</a>
+                <a href="/blog" class="block text-gray-600 hover:text-primary transition-colors">ブログ</a>
+                <a href="#free-trial" class="block btn-primary text-center">無料体験申込</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-16 lg:py-24 gradient-bg text-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0" data-aos="fade-right" data-aos-duration="1000">
+                    <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+                        自分のペースで学べる<br>
+                        <span class="text-yellow-300">オンライン家庭教師</span>
+                    </h1>
+                    <p class="text-lg md:text-xl mb-8 leading-relaxed">
+                        EduMind Harmonyは、不登校の生徒さんに寄り添う、AIメンタルケア連携型のオンライン家庭教師サービスです。「学びたい」気持ちを大切に、一人ひとりに合わせたカリキュラムで学習をサポートします。
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#subjects" class="btn-primary">指導科目を見る</a>
+                        <a href="#free-trial" class="bg-white text-primary hover:bg-gray-100 px-6 py-3 rounded-lg font-medium transition-all">無料体験授業</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="relative w-full max-w-md">
+                        <div class="absolute -top-5 -left-5 w-24 h-24 rounded-full bg-yellow-300 opacity-30 float-animation"></div>
+                        <div class="absolute -bottom-3 -right-3 w-16 h-16 rounded-full bg-blue-300 opacity-30 float-animation" style="animation-delay: 2s;"></div>
+                        <div class="card bg-white p-4 relative z-10">
+                            <img src="https://assets-global.website-files.com/61d7ea76139c67233b80e295/65f488d45746611c480eff05_absurdidade_examining_the_most_difficult_moments_of_integrated_edu_a3378218-a086-4e14-9fbc-7e2264f1b5c1.webp" alt="オンライン学習イメージ" class="rounded-lg w-full">
+                            <div class="mt-6 flex items-center gap-4">
+                                <i class="fas fa-video text-primary text-2xl"></i>
+                                <div>
+                                    <h4 class="text-gray-900 font-medium">オンラインだから安心</h4>
+                                    <p class="text-gray-600 text-sm">自宅から参加できるので心理的負担が少なく、学習に集中できます</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-center text-3xl font-bold mb-12">EduMind Harmonyの<span class="text-primary">3つの特徴</span></h2>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card p-6 bg-white hover-grow" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-brain text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-3">AIメンタルケアとの連携</h3>
+                    <p class="text-gray-600 text-center">
+                        AIチャットボットによる24時間メンタルサポートと連携。学習前の不安を軽減し、心の準備を整えます。
+                    </p>
+                </div>
+
+                <div class="card p-6 bg-white hover-grow" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-user-graduate text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-3">専門性の高い講師陣</h3>
+                    <p class="text-gray-600 text-center">
+                        不登校支援の知識を持った講師が在籍。教科指導だけでなく、メンタル面でもきめ細かくサポートします。
+                    </p>
+                </div>
+
+                <div class="card p-6 bg-white hover-grow" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-calendar-alt text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-3">柔軟なカリキュラム設計</h3>
+                    <p class="text-gray-600 text-center">
+                        学校の進度に合わせた学習も、興味関心に基づいた学習も可能。一人ひとりの状況に応じて調整します。
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center">
+                <div class="inline-block border-2 border-primary rounded-lg p-4 max-w-2xl mx-auto" data-aos="fade-up">
+                    <p class="text-lg"><i class="fas fa-lightbulb text-yellow-500 mr-2"></i>学校と連携した<span class="font-bold">出席扱い</span>の学習支援も可能です。詳しくはお問い合わせください。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="subjects" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-center text-3xl font-bold mb-6">幅広い<span class="text-primary">指導科目</span></h2>
+            <p class="text-center text-gray-600 max-w-3xl mx-auto mb-12">
+                小学生から高校生まで、全ての学年・科目に対応しています。学校の授業の補習から、受験対策、趣味・特技を伸ばす学習まで、目的に合わせた指導を行います。
+            </p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card bg-white p-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                            <i class="fas fa-calculator text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">算数・数学</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        基礎から応用まで、一人ひとりの理解度に合わせて指導します。図やモデルを活用した視覚的な説明で、苦手意識を解消します。
+                    </p>
+                    <div class="progress-bar">
+                        <div class="progress-value" style="width: 95%;"></div>
+                    </div>
+                    <div class="flex justify-between text-sm mt-2">
+                        <span>小学1年〜高校3年</span>
+                        <span class="text-primary">対応講師: 95%</span>
+                    </div>
+                </div>
+
+                <div class="card bg-white p-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                            <i class="fas fa-book text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">国語</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        読解力から表現力まで、国語の総合的な力を養います。作文やディスカッションを通じて、考える力や伝える力も育みます。
+                    </p>
+                    <div class="progress-bar">
+                        <div class="progress-value" style="width: 90%;"></div>
+                    </div>
+                    <div class="flex justify-between text-sm mt-2">
+                        <span>小学1年〜高校3年</span>
+                        <span class="text-primary">対応講師: 90%</span>
+                    </div>
+                </div>
+
+                <div class="card bg-white p-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                            <i class="fas fa-language text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">英語</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        基礎文法からコミュニケーション能力まで、英語の4技能をバランスよく指導。ネイティブ講師とのセッションも選択可能です。
+                    </p>
+                    <div class="progress-bar">
+                        <div class="progress-value" style="width: 85%;"></div>
+                    </div>
+                    <div class="flex justify-between text-sm mt-2">
+                        <span>小学3年〜高校3年</span>
+                        <span class="text-primary">対応講師: 85%</span>
+                    </div>
+                </div>
+
+                <div class="card bg-white p-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                            <i class="fas fa-flask text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">理科（物理・化学・生物・地学）</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        実験映像や図解を交えた分かりやすい授業で、自然科学への興味を引き出します。各分野の専門講師による深い知識の指導も可能です。
+                    </p>
+                    <div class="progress-bar">
+                        <div class="progress-value" style="width: 80%;"></div>
+                    </div>
+                    <div class="flex justify-between text-sm mt-2">
+                        <span>小学3年〜高校3年</span>
+                        <span class="text-primary">対応講師: 80%</span>
+                    </div>
+                </div>
+
+                <div class="card bg-white p-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                            <i class="fas fa-globe-asia text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">社会（地理・歴史・公民）</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        暗記だけでなく、「なぜ」を大切にした授業で、社会事象への理解を深めます。地図や年表を活用したビジュアル学習も実施します。
+                    </p>
+                    <div class="progress-bar">
+                        <div class="progress-value" style="width: 75%;"></div>
+                    </div>
+                    <div class="flex justify-between text-sm mt-2">
+                        <span>小学3年〜高校3年</span>
+                        <span class="text-primary">対応講師: 75%</span>
+                    </div>
+                </div>
+
+                <div class="card bg-white p-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                            <i class="fas fa-paint-brush text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">その他専門科目</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        プログラミング、音楽、美術、投資教育など、特定分野の専門的な学習にも対応。興味関心を伸ばす学びを支援します。
+                    </p>
+                    <div class="progress-bar">
+                        <div class="progress-value" style="width: 60%;"></div>
+                    </div>
+                    <div class="flex justify-between text-sm mt-2">
+                        <span>全学年対応</span>
+                        <span class="text-primary">対応講師: 60%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <a href="#free-trial" class="btn-primary">無料体験授業で詳しく相談する</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-center text-3xl font-bold mb-6">信頼できる<span class="text-primary">講師陣</span></h2>
+            <p class="text-center text-gray-600 max-w-3xl mx-auto mb-12">
+                教科の専門知識だけでなく、不登校支援や発達障害への理解など、特別な研修を受けた講師が在籍。安心して学習に取り組める環境を提供します。
+            </p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card bg-white overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                    <div class="relative">
+                        <img src="https://assets-global.website-files.com/61d7ea76139c67233b80e295/65f08f51674287bb36d395c8_absurdidade_a_japanese_female_high_school_chemistry_teacher_in_a__fccd8ab1-6c93-4a2e-a951-3f0db8a2241b.webp" alt="鈴木先生" class="w-full h-64 object-cover">
+                        <div class="teacher-badge">数学・理科専門</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">鈴木 明子 先生</h3>
+                        <p class="text-gray-600 mb-4">
+                            元中学校教諭、教育歴15年。不登校支援の専門教育を受け、一人ひとりのペースに合わせた丁寧な指導が特徴です。特に数学が苦手な生徒の「わかった！」の瞬間を大切にしています。
+                        </p>
+                        <div class="flex items-center gap-2">
+                            <span class="px-3 py-1 bg-blue-100 text-primary rounded-full text-sm">数学</span>
+                            <span class="px-3 py-1 bg-blue-100 text-primary rounded-full text-sm">物理</span>
+                            <span class="px-3 py-1 bg-blue-100 text-primary rounded-full text-sm">化学</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-white overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                    <div class="relative">
+                        <img src="https://assets-global.website-files.com/61d7ea76139c67233b80e295/65f08fd0aac8e80c91153394_absurdidade_a_japanese_male_college_tutor_teaching_english_in_a__8a6607ed-eecc-4512-bad6-b87797bfe946.webp" alt="田中先生" class="w-full h-64 object-cover">
+                        <div class="teacher-badge">英語・国語専門</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">田中 誠 先生</h3>
+                        <p class="text-gray-600 mb-4">
+                            海外留学経験を持ち、英語教育に情熱を注ぐ講師。心理学の知識も活かし、学習意欲を高める授業が好評です。英会話からテスト対策まで幅広く対応します。
+                        </p>
+                        <div class="flex items-center gap-2">
+                            <span class="px-3 py-1 bg-blue-100 text-primary rounded-full text-sm">英語</span>
+                            <span class="px-3 py-1 bg-blue-100 text-primary rounded-full text-sm">国語</span>
+                            <span class="px-3 py-1 bg-blue-100 text-primary rounded-full text-sm">小論文</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-white overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+                    <div class="relative">
+                        <img src="https://assets-global.website-files.com/61d7ea76139c67233b80e295/65f09003674287bb36dc35cc_absurdidade_a_japanese_female_history_teacher_in_a_business_atti_cf5b9965-d733-46fe-b087-b1fc7c903302.webp" alt="佐藤先生" class="w-full h-64 object-cover">
+                        <div class="teacher-badge">社会専門</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">佐藤 優子 先生</h3>
+                        <p class="text-gray-600 mb-4">
+                            社会科専門の講師。歴史や地理を物語として伝え、生徒の興味を引き出すのが得意です。発達障害への理解も深く、視覚的な教材を活用した分かりやすい授業を展開します。
+                        </p>
+                        <div class="flex items-center gap-2">
+                            <span class="px-3 py-1 bg-blue-100 text-primary rounded-full text-sm">歴史</span>
+                            <span class="px-3 py-1 bg-blue-100 text-primary rounded-full text-sm">地理</span>
+                            <span class="px-3 py-1 bg-blue-100 text-primary rounded-full text-sm">公民</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <p class="text-gray-600 mb-4">
+                    これらは一部の講師です。他にも多数の専門講師が在籍しています。
+                </p>
+                <a href="/teachers" class="btn-secondary">講師一覧をもっと見る</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-center text-3xl font-bold mb-6">一人ひとりに合わせた<span class="text-primary">カリキュラム設計</span></h2>
+            <p class="text-center text-gray-600 max-w-3xl mx-auto mb-12">
+                初回の無料体験授業後、生徒さんの状況や希望に合わせたオーダーメイドのカリキュラムを作成します。学校の進度に合わせることも、オリジナルのペースで進めることも可能です。
+            </p>
+
+            <div class="timeline max-w-3xl mx-auto">
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <h4 class="text-xl font-bold mb-2">初回カウンセリング</h4>
+                    <p class="text-gray-600">
+                        生徒さんと保護者の方と一緒に、現在の学習状況、興味関心、目標などをお聞きします。AIメンタルケアとの連携希望も確認します。
+                    </p>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <h4 class="text-xl font-bold mb-2">学習診断テスト（希望者のみ）</h4>
+                    <p class="text-gray-600">
+                        現在の学力を把握するための簡単なテストを実施。不安を与えないよう配慮し、得意分野も確認します。
+                    </p>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <h4 class="text-xl font-bold mb-2">カリキュラム案の作成</h4>
+                    <p class="text-gray-600">
+                        カウンセリングと診断テストの結果を基に、最適なカリキュラム案を作成。短期目標と長期目標を設定します。
+                    </p>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                    <h4 class="text-xl font-bold mb-2">カリキュラムの調整と確定</h4>
+                    <p class="text-gray-600">
+                        作成したカリキュラム案を生徒さんと保護者の方と共有し、フィードバックを基に調整。最終的なカリキュラムを確定します。
+                    </p>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="500">
+                    <h4 class="text-xl font-bold mb-2">定期的な見直しと調整</h4>
+                    <p class="text-gray-600">
+                        授業の進行状況や生徒さんの反応を見ながら、必要に応じてカリキュラムを随時調整します。月に一度、保護者の方への報告も行います。
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-16 bg-white rounded-lg shadow-lg p-8 max-w-3xl mx-auto" data-aos="fade-up">
+                <h3 class="text-xl font-bold mb-4 text-center">カリキュラム設計の特徴</h3>
+
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <div class="custom-checkbox mt-1"></div>
+                        <div class="feature-item">
+                            <h4 class="font-medium">メンタルケアを重視</h4>
+                            <p class="text-gray-600">学習前後のメンタルケアを組み込み、心理的な安定を図りながら学習を進めます。</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="custom-checkbox mt-1"></div>
+                        <div class="feature-item">
+                            <h4 class="font-medium">小さな成功体験を積み重ね</h4>
+                            <p class="text-gray-600">達成感を感じられる小さな目標を設定し、自己効力感を高める設計にしています。</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="custom-checkbox mt-1"></div>
+                        <div class="feature-item">
+                            <h4 class="font-medium">興味を活かした教科横断学習</h4>
+                            <p class="text-gray-600">生徒の興味関心を活かし、複数教科を横断した総合的な学びを提供します。</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="custom-checkbox mt-1"></div>
+                        <div class="feature-item">
+                            <h4 class="font-medium">デジタル教材の積極活用</h4>
+                            <p class="text-gray-600">AIドリルやインタラクティブ教材など、最新のデジタル教材を活用します。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-center text-3xl font-bold mb-6">シンプルな<span class="text-primary">料金プラン</span></h2>
+            <p class="text-center text-gray-600 max-w-3xl mx-auto mb-12">
+                明確な料金体系で、無理なく続けられるプランをご用意しています。いつでも解約可能で、追加料金は一切ありません。
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="price-card bg-white p-8" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-center mb-8">
+                        <h3 class="text-xl font-bold">ライトプラン</h3>
+                        <p class="text-gray-500 mb-4">週1回・月4回のオンライン授業</p>
+                        <div class="mt-4">
+                            <span class="text-4xl font-bold">15,000</span>
+                            <span class="text-gray-500">円/月（税込）</span>
+                        </div>
+                    </div>
+
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>週1回・60分授業</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>オーダーメイドカリキュラム</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>AIチャットボット基本利用</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>月次学習レポート</span>
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-times mr-2"></i>
+                            <span>チャット質問対応</span>
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-times mr-2"></i>
+                            <span>保護者面談</span>
+                        </li>
+                    </ul>
+
+                    <div class="text-center">
+                        <a href="#free-trial" class="btn-secondary w-full block">体験授業を申し込む</a>
+                    </div>
+                </div>
+
+                <div class="price-card featured-price bg-white p-8" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-primary text-white py-1 px-4 rounded-full text-sm font-medium inline-block mb-4">おすすめ</div>
+                    <div class="text-center mb-8">
+                        <h3 class="text-xl font-bold">スタンダードプラン</h3>
+                        <p class="text-gray-500 mb-4">週2回・月8回のオンライン授業</p>
+                        <div class="mt-4">
+                            <span class="text-4xl font-bold">28,000</span>
+                            <span class="text-gray-500">円/月（税込）</span>
+                        </div>
+                    </div>
+
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>週2回・60分授業</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>オーダーメイドカリキュラム</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>AIチャットボット無制限利用</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>月次学習レポート</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>授業外チャット質問対応</span>
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-times mr-2"></i>
+                            <span>保護者面談</span>
+                        </li>
+                    </ul>
+
+                    <div class="text-center">
+                        <a href="#free-trial" class="btn-primary w-full block">体験授業を申し込む</a>
+                    </div>
+                </div>
+
+                <div class="price-card bg-white p-8" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-center mb-8">
+                        <h3 class="text-xl font-bold">プレミアムプラン</h3>
+                        <p class="text-gray-500 mb-4">週3回・月12回のオンライン授業</p>
+                        <div class="mt-4">
+                            <span class="text-4xl font-bold">39,000</span>
+                            <span class="text-gray-500">円/月（税込）</span>
+                        </div>
+                    </div>
+
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>週3回・60分授業</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>オーダーメイドカリキュラム</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>AIチャットボット無制限利用</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>詳細学習レポート（週次）</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>授業外チャット質問対応</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>月1回保護者面談</span>
+                        </li>
+                    </ul>
+
+                    <div class="text-center">
+                        <a href="#free-trial" class="btn-secondary w-full block">体験授業を申し込む</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12">
+                <div class="bg-gray-50 rounded-lg p-6 max-w-3xl mx-auto" data-aos="fade-up">
+                    <h3 class="text-xl font-bold mb-4">よくある質問</h3>
+
+                    <div class="space-y-4">
+                        <div class="faq-item pb-4">
+                            <h4 class="faq-question font-medium cursor-pointer mb-2">教科の組み合わせは自由に選べますか？</h4>
+                            <div class="faq-answer text-gray-600">
+                                <p>はい、全てのプランで教科の組み合わせは自由です。例えば週2回の場合、月曜は数学、木曜は英語というように設定できます。また、月によって科目を変更することも可能です。</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item pb-4">
+                            <h4 class="faq-question font-medium cursor-pointer mb-2">兄弟姉妹で利用する場合の割引はありますか？</h4>
+                            <div class="faq-answer text-gray-600">
+                                <p>はい、兄弟姉妹で利用される場合は、2人目以降のお子様は10%割引となります。また、年間一括払いをご希望の場合も割引がございます。詳細はお問い合わせください。</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item pb-4">
+                            <h4 class="faq-question font-medium cursor-pointer mb-2">体調不良などで授業をキャンセルした場合はどうなりますか？</h4>
+                            <div class="faq-answer text-gray-600">
+                                <p>授業開始の3時間前までにご連絡いただければ、振替授業を設定いたします。月内での振替が原則ですが、難しい場合は翌月への繰り越しも可能です。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 gradient-bg text-white">
+        <div class="container mx-auto px-4 text-center" data-aos="fade-up">
+            <h2 class="text-3xl font-bold mb-6">一人ひとりに合わせた学びの場を</h2>
+            <p class="text-lg mb-8 max-w-2xl mx-auto">
+                EduMind Harmonyでは、「学校に行けない」ではなく「学びを止めない」ための環境を提供しています。まずは無料体験授業で、新しい学びのスタイルを体験してみませんか？
+            </p>
+            <a href="#free-trial" class="btn-primary text-lg px-8 py-4">無料体験授業に申し込む</a>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <a href="/" class="flex items-center mb-4">
+                        <i class="fas fa-graduation-cap text-white text-2xl mr-2"></i>
+                        <span class="text-xl font-bold">EduMind Harmony</span>
+                    </a>
+                    <p class="text-gray-400 mb-4">
+                        不登校の生徒さんに寄り添う、AIメンタルケア連携型のオンライン家庭教師サービス
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-primary transition-colors"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white hover:text-primary transition-colors"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white hover:text-primary transition-colors"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white hover:text-primary transition-colors"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg mb-4">サービス</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/ai-mentalcare" class="text-gray-400 hover:text-white transition-colors">AIメンタルケア</a></li>
+                        <li><a href="/online-teacher" class="text-gray-400 hover:text-white transition-colors">オンライン家庭教師</a></li>
+                        <li><a href="/curriculum" class="text-gray-400 hover:text-white transition-colors">カリキュラム設計</a></li>
+                        <li><a href="/attendance" class="text-gray-400 hover:text-white transition-colors">出席認定サポート</a></li>
+                        <li><a href="/pricing" class="text-gray-400 hover:text-white transition-colors">料金プラン</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg mb-4">会社情報</h4>
+                    <ul class="space-y-2">
+                         <li><a href="/about" class="text-gray-400 hover:text-white transition-colors">会社概要</a></li>
+                        <li><a href="/teachers" class="text-gray-400 hover:text-white transition-colors">講師紹介</a></li>
+                        <li><a href="/blog" class="text-gray-400 hover:text-white transition-colors">ブログ</a></li>
+                        <li><a href="/privacy" class="text-gray-400 hover:text-white transition-colors">プライバシーポリシー</a></li>
+                        <li><a href="/terms" class="text-gray-400 hover:text-white transition-colors">利用規約</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg mb-4">お問い合わせ</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-2 text-primary"></i>
+                            <span class="text-gray-400">〒150-0001 東京都渋谷区渋谷1-1-1</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone mt-1 mr-2 text-primary"></i>
+                            <span class="text-gray-400">0120-123-456</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-2 text-primary"></i>
+                            <span class="text-gray-400">info@edumind-harmony.jp</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-clock mt-1 mr-2 text-primary"></i>
+                            <span class="text-gray-400">受付時間: 平日9:00〜18:00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-6 text-center">
+                <p class="text-gray-400">© 2025 EduMind Harmony. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="hidden fixed bottom-8 right-8 z-50 w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center shadow-lg hover:bg-accent transition-all duration-300">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
