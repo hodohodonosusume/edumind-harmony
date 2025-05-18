@@ -842,7 +842,7 @@
                                 </div>
                                 <div>
                                     <h4 class="font-semibold text-lg">メール</h4>
-                                    <p class="opacity-80">hodohodonosusume@gmail.com</p>
+                                    <p class="opacity-80">info@edumindharmony.com</p>
                                     <p class="text-xs opacity-60 mt-1">24時間以内に返信いたします</p>
                                 </div>
                             </div>
@@ -874,7 +874,7 @@
                     <div class="p-8 col-span-2 text-gray-800">
                         <h3 class="text-2xl font-bold mb-6">お問い合わせフォーム</h3>
 
-                        <form action="mailto:hodohodonosusume@gmail.com" method="POST" enctype="text/plain" class="space-y-6">
+                        <form id="contactForm" action="#" method="POST" class="space-y-6">
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div>
                                     <label for="name" class="block text-gray-700 font-medium mb-2">お名前</label>
@@ -918,8 +918,7 @@
                                 </button>
                             </div>
                         </form>
-                         <p class="text-sm text-gray-600 mt-4">※「送信する」ボタンを押すと、お使いのメールソフトが起動し、メール作成画面が開きます。</p>
-                    </div>
+                         </div>
                 </div>
             </div>
         </div>
@@ -966,8 +965,8 @@
                         <li><a href="#about" class="hover:text-white transition">サービス紹介</a></li>
                         <li><a href="#profile" class="hover:text-white transition">講師紹介</a></li>
                         <li><a href="#blog" class="hover:text-white transition">ブログ</a></li>
-                        <li><a href="privacy.html" class="hover:text-white transition">プライバシーポリシー</a></li>
-                        <li><a href="#" class="hover:text-white transition">お問い合わせ</a></li>
+                         <li><a href="privacy.html" class="hover:text-white transition">プライバシーポリシー</a></li>
+                        <li><a href="#contact" class="hover:text-white transition">お問い合わせ</a></li>
                     </ul>
                 </div>
 
@@ -976,7 +975,7 @@
                     <ul class="space-y-3 text-gray-400">
                         <li class="flex items-start">
                             <i class="fas fa-envelope mt-1.5 mr-3 text-indigo-400"></i>
-                            <span>hodohodonosusume@gmail.com</span>
+                            <span>info@edumindharmony.com</span>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-clock mt-1.5 mr-3 text-indigo-400"></i>
@@ -997,7 +996,125 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script src="js/main.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+     <script src="js/main.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        const navLinks = navbar.querySelectorAll('a');
+        if (navbar) {
+             window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('navbar-scrolled');
+                    navLinks.forEach(link => {
+                        link.classList.remove('text-white');
+                        link.classList.add('text-gray-800');
+                    });
+                } else {
+                    navbar.classList.remove('navbar-scrolled');
+                    navLinks.forEach(link => {
+                        link.classList.add('text-white');
+                        link.classList.remove('text-gray-800');
+                    });
+                }
+            });
+        }
+
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    // mobileMenu.classList.add('hidden'); // Optional: close menu on link click
+                    window.scrollTo({
+                        top: targetElement.offsetTop - (navbar ? navbar.offsetHeight : 0), // Adjust for fixed navbar height
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+
+        // FAQ accordion
+        const accordionHeaders = document.querySelectorAll('.accordion-header');
+        accordionHeaders.forEach(header => {
+            header.addEventListener('click', () => {
+                const content = header.nextElementSibling;
+                const icon = header.querySelector('i');
+
+                content.classList.toggle('active');
+                icon.classList.toggle('transform');
+                icon.classList.toggle('rotate-180');
+
+                if (content.classList.contains('active')) {
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                } else {
+                    content.style.maxHeight = 0;
+                }
+            });
+        });
+
+        // Handle form submission to open email client
+        const contactForm = document.getElementById('contactForm');
+
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault(); // Prevent actual form submission
+
+                // Get form values
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const subject = document.getElementById('subject').value;
+                const message = document.getElementById('message').value;
+
+                // Construct the email body string
+                const emailBody = `
+名前: ${name}
+メールアドレス: ${email}
+お問い合わせ内容: ${subject}
+
+メッセージ:
+${message}
+`;
+
+                // Encode subject and body for use in mailto link
+                const encodedSubject = encodeURIComponent(`お問い合わせ: ${subject}`); // 件名に「お問い合わせ: 」を付ける
+                const encodedBody = encodeURIComponent(emailBody);
+
+                // Create the mailto link
+                const mailtoLink = `mailto:hodohodonosusume@gmail.com?subject=${encodedSubject}&body=${encodedBody}`;
+
+                // Open the email client
+                window.location.href = mailtoLink; // This will trigger the default email client
+
+                // Optionally, show a message to the user
+                 alert('お問い合わせありがとうございます！メールソフトが起動しますので、内容をご確認の上送信してください。');
+
+                // Optionally, clear the form after opening the mail client
+                // contactForm.reset(); // Uncomment if you want to clear the form automatically
+            });
+        }
+    </script>
 </body>
 </html>
