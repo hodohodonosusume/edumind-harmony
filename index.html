@@ -870,59 +870,31 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="p-8 col-span-2 text-gray-800">
-                        <h3 class="text-2xl font-bold mb-6">お問い合わせフォーム</h3>
-
-                        <form id="contactForm" action="https://formspree.io/f/xanoknao" method="POST" class="space-y-6">
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div>
-                                    <label for="name" class="block text-gray-700 font-medium mb-2">お名前</label>
-                                    <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
-                                </div>
-
-                                <div>
-                                    <label for="email" class="block text-gray-700 font-medium mb-2">メールアドレス</label>
-                                    <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
-                                </div>
+                    <!-- お問い合わせ / LINE追加セクション -->
+                    <section id="contact" class="py-20 bg-white">
+                        <div class="container mx-auto px-4">
+                            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">お問い合わせ</h2>
+                            
+                            <div class="max-w-2xl mx-auto">
+                                <div class="line-btn-container">
+                                    <h3 class="text-2xl font-bold text-center">公式LINEで無料相談</h3>
+                                    <p class="text-lg text-center mb-6">まずはお気軽に公式LINEからご相談ください</p>
+                                    
+                                    <div class="line-btn text-center mb-8">
+                                        <a href="https://lin.ee/o7PogAw" target="_blank">
+                                            <img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" height="60" border="0">
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="line-qr text-center">
+                                        <p class="mb-4 text-gray-600">QRコードで追加</p>
+                                        <img src="https://qr-official.line.me/gs/M_288njthg_GW.png?oat_content=qr" alt="LINE QRコード">
+                                    </div>
+                                </div>                
                             </div>
-
-                            <div>
-                                <label for="subject" class="block text-gray-700 font-medium mb-2">お問い合わせ内容</label>
-                                <select id="subject" name="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
-                                    <option value="" selected disabled>選択してください</option>
-                                    <option value="無料体験授業の申し込み">無料体験授業の申し込み</option>
-                                    <option value="無料相談の予約">無料相談の予約</option>
-                                    <option value="サービスについての質問">サービスについての質問</option>
-                                    <option value="その他">その他</option>
-                                </select>
-                            </div>
-
-                            <div>
-                                <label for="message" class="block text-gray-700 font-medium mb-2">メッセージ</label>
-                                <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required></textarea>
-                            </div>
-
-                            <div>
-                                <label class="flex items-center">
-                                    <input type="checkbox" class="text-indigo-600 rounded" required>
-                                    <span class="ml-2 text-sm text-gray-600">
-                                        <a href="privacy.html" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:underline">プライバシーポリシー</a>に同意します
-                                    </span>
-                                </label>
-                            </div>
-
-                            <div>
-                                <button type="submit" class="w-full bg-indigo-600 text-white py-3 rounded-lg hover:bg-indigo-700 transition duration-300 font-semibold">
-                                    送信する
-                                </button>
-                            </div>
-                        </form>
-                         </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                        </div>
+                    </section>
+   
 
     <footer class="bg-gray-900 text-white py-12">
         <div class="container mx-auto px-4">
